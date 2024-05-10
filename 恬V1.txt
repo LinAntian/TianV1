@@ -2061,7 +2061,7 @@ loadstring(game:HttpGet('https://gist.githubusercontent.com/C00LBOZO/0c78ad8c74c
 
 Tab:AddButton({
 
-	Name = "变身(阿巴怪提供)",
+	Name = "变身",
 
 	Callback = function()
 
@@ -2073,7 +2073,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Pub
 
 Tab:AddButton({
 
-	Name = "微山2.3.2(依旧是阿巴怪提供)",
+	Name = "微山2.3.2--特别推荐",
 
 	Callback = function()
 
@@ -2147,7 +2147,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Las
 
 Tab:AddButton({
 
-	Name = "能量罐（清岩提供）",
+	Name = "能量罐",
 
 	Callback = function()
 
