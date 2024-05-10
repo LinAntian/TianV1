@@ -17,7 +17,7 @@ if _G.she==true then
 
 CoreGui:SetCore("SendNotification", {
     Title = "验证结果",
-    Text = a.."TianV1已获取您的白名单验证",
+    Text = a.."已获取您的白名单验证",
     Duration = 5,
 })
 
@@ -31,7 +31,7 @@ local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
     Title = "验证失败",
-    Text = "你没有获取白名单!请进群获得白名单:495186854(获取成功将会自动打开脚本)",
+    Text = "你没有获取白名单！加入群聊获取白名单:495186854",
     Duration = 10, --时间
 })
 end
