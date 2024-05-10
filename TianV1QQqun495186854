@@ -3,7 +3,7 @@
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
-    Title = "确认身份",
+    Title = "检验您的白名单",
     Text = "正在进行LAT White List验证....",
     Duration = 3, 
 })
@@ -23,7 +23,7 @@ if _G.she==true then
     local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
-    Title = "验证结果",
+    Title = "已获取您的验证",
     Text = a.."TianV1已获取您的白名单验证",
     Duration = 5,
 })
