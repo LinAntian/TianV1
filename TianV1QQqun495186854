@@ -148,7 +148,7 @@ local Tab = Window:MakeTab({
 
 local Section = Tab:AddSection({
 
-	Name = "欢迎您使用该脚本"
+	Name = "欢迎您使用TianV1 Script"
 
 })
 
