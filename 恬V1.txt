@@ -69,11 +69,6 @@ Tab:AddButton({
      setclipboard("495186854")
   	end
 
-Tab:AddParagraph("作者","AnTianLin")
-Tab:AddLabel("作者QQ：3422265683")
-Tab:AddLabel("QQ群：495186854")
-Tab:AddLabel("此脚本完全免费，可以二改，禁止倒卖，此脚本为二改缝合脚本")
-
 local Tab = Window:MakeTab({
 	Name = "🥰通用Script",
 	Icon = "rbxassetid://7734068321",
