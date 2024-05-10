@@ -1,0 +1,24 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "确认身份",
+    Text = "正在验证....",
+    Duration = 3, 
+})
+
+local a=tostring(game.Players.LocalPlayer.Character);
+
+if a=="useranewrff"then
+_G.she=true
+elseif a=="zxl200826yyds"then
+end
+if _G.she==true then
+    local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "验证结果",
+    Text = a.."TianV1已获取您的白名单验证",
+    Duration = 5,
+})
+
+wait(3.5)
