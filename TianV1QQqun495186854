@@ -4894,6 +4894,20 @@ Tab:AddButton({
   
   })
 
+local Tab =Window:MakeTab({
+	Name = "最强战场",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "MrBacon",
+	Callback = function()
+
+loadstring(Game:HttpGet("https://pastefy.app/oKLqVHKF/raw"))()
+  	end
+})
+
  wait(3) --等待三秒
   --你的脚本
     else --验证失败执行↓
