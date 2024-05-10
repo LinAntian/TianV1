@@ -22,3 +22,16 @@ CoreGui:SetCore("SendNotification", {
 })
 
 wait(3.5)
+
+ wait(3) --等待三秒
+  --你的脚本
+    else --验证失败执行↓
+setclipboard("LAT")
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "验证失败",
+    Text = "你没有获取白名单!请进群获得白名单:495186854",
+    Duration = 10, --时间
+})
+end
