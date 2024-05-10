@@ -4,8 +4,8 @@ local CoreGui = game:GetService("StarterGui") -- Variable of StarterGui
 
 CoreGui:SetCore("SendNotification", {
     -- Customizable
-    Title = "白名单认证",
-    Text = "白名单验证...",
+    Title = "TianV1白名单验证",
+    Text = "白名单正在验证中...",
     Duration = 3, --时间
 })
 
@@ -20,7 +20,7 @@ if Whitelisted == true then
 
 CoreGui:SetCore("SendNotification", {
     -- Customizable
-    Title = "白名单认证",
+    Title = "白名单验证",
     Text = "玩家:"..game.Players.LocalPlayer.Name.."，已获取白名单",
     Duration = 7, --时间
 }) 
