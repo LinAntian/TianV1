@@ -1,4 +1,5 @@
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/White%20List"))()
+--免费脚本，所以并没有加密
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/White%20List"))()
     else
         game.Players.LocalPlayer:Kick("进群获取卡密:495186854")
     end
