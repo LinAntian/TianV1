@@ -750,7 +750,8 @@ Tab:AddButton({
     end
 })
 
-
-       game.Players.LocalPlayer:Kick("你没有白名单傻逼")--踢人函数
+       game.Players.LocalPlayer:Kick("你并没有获取白名单！请加群495186854获取")--踢人函数
    end
+
+
 OrionLib:Init()
