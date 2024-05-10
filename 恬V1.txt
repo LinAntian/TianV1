@@ -118,7 +118,7 @@ local function HeartbeatUpdate()
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
-local Window = OrionLib:MakeWindow({Name = "TianV1", HidePremium = false, SaveConfig = true,IntroText = "TianV1", ConfigFolder = "TianV1"})
+local Window = OrionLib:MakeWindow({Name = "TianV1", HidePremium = false, SaveConfig = true,IntroText = "LATstudio制作", ConfigFolder = "TianV1"})
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "TianV1"; Text ="TianV1"; Duration = 4; })
 
 local about = Window:MakeTab({
@@ -127,7 +127,7 @@ local about = Window:MakeTab({
     PremiumOnly = false
 })
 
-about:AddParagraph("免责声明:此脚本为LAT制作免费脚本，二改缝合脚本")
+about:AddParagraph("免责声明:此脚本为LAT制作免费脚本")
 about:AddParagraph("禁止倒卖圈钱")
 
 local Tab =Window:MakeTab({
