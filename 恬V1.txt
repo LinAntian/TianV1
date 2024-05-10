@@ -69,13 +69,13 @@ Start.TextWrapped = true
 Start.MouseButton1Click:Connect(function()
     if Key.Text == "LATstudio" then
         ScreenGui:Destroy()
-       loadstring(game:HttpGet("https://pastebin.com/raw/aSZ514gr"))()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/%E6%81%ACV1.txt"))()
     else
         game.Players.LocalPlayer:Kick("进群获取卡密:495186854")
     end
 end)
 
-wait(9999999999999999999)
+wait(3.5)
 
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
 local LBLG = Instance.new("ScreenGui", getParent)
