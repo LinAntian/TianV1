@@ -12,7 +12,8 @@ local a=tostring(game.Players.LocalPlayer.Character);
 
 if a=="zxl200826yyds"then
 _G.she=true
-elseif a=="zxl200826yyds"then
+elseif a=="用户名"then--重复下去即可
+_G.she=true
 end
 if _G.she==true then
     local CoreGui = game:GetService("StarterGui")
