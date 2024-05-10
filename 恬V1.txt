@@ -10,7 +10,7 @@ CoreGui:SetCore("SendNotification", {
 
 local a=tostring(game.Players.LocalPlayer.Character);
 
-if a=="useranewrff"then
+if a=="zxl200826yyds"then
 _G.she=true
 elseif a=="zxl200826yyds"then
 end
