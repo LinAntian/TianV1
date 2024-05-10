@@ -4910,6 +4910,21 @@ loadstring(Game:HttpGet("https://pastefy.app/oKLqVHKF/raw"))()
   	end
 })
 
+local Tab =Window:MakeTab({
+	Name = "驾驶帝国",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Lightux(需要卡密)",
+	Callback = function()
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/cool83birdcarfly02six/Lightux/main/README.md'),true))()
+  	end
+})
+
+
  wait(3) --等待三秒
   --你的脚本
     else --验证失败执行↓
