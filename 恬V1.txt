@@ -1,11 +1,42 @@
 --免费脚本，所以并没有加密，支持二改
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/White%20List"))()
-    else
-        game.Players.LocalPlayer:Kick("进群获取卡密:495186854")
-    end
-end)
+--LATstudio
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "确认身份",
+    Text = "正在进行二步验证....",
+    Duration = 3, 
+})
+
+local a=tostring(game.Players.LocalPlayer.Character);
+
+if a=="useranewrff"then
+_G.she=true
+elseif a=="zxl200826yyds"then
+end
+if _G.she==true then
+    local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "验证结果",
+    Text = a.."TianV1已获取您的白名单验证",
+    Duration = 5,
+})
 
 wait(3.5)
+
+ wait(3) --等待三秒
+  --你的脚本
+    else --验证失败执行↓
+setclipboard("LAT")
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "验证失败",
+    Text = "你没有获取白名单!请进群获得白名单:495186854(获取成功将会自动打开脚本)",
+    Duration = 10, --时间
+})
+end
 
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
 local LBLG = Instance.new("ScreenGui", getParent)
