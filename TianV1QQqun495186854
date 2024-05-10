@@ -4,7 +4,7 @@ local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
     Title = "确认身份",
-    Text = "正在进行二步验证....",
+    Text = "正在进行LAT White List验证....",
     Duration = 3, 
 })
 
