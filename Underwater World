@@ -1,3 +1,6 @@
+local CoreGui = game:GetService("StarterGui") -- Variable of StarterGui
+
+CoreGui:SetCore("SendNotification", {
 repeat task.wait() until game:IsLoaded()
 local library = {}
 local ToggleUI = false
