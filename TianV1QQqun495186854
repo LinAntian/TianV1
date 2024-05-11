@@ -92,6 +92,18 @@ local about = Window:MakeTab({
     PremiumOnly = false
 })
 
+CoreGui:SetCore("SendNotification", {
+    Title = "TianV1",
+    Text = "已加载成功",
+    Duration = 10, 
+})
+
+
+about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
+about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
+about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
+
+
 about:AddParagraph("免责声明:此脚本为LAT制作免费脚本")
 about:AddParagraph("禁止倒卖圈钱")
 about:AddParagraph("如果有需要的脚本加↓↓↓")
