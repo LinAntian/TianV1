@@ -1712,7 +1712,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	end  
 	
 	--if writefile and isfile then
-	--	if not isfile("NewLibraryNotification1.txt") then
+	--	if not isfile("LOL") then
 	--		local http_req = (syn and syn.request) or (http and http.request) or http_request
 	--		if http_req then
 	--			http_req({
@@ -1750,7 +1750,7 @@ function OrionLib:MakeWindow(WindowConfig)
 
 	--			UI:Destroy()
 	--		end)
-	--		writefile("NewLibraryNotification1.txt","The value for the notification having been sent to you.")
+	--		writefile("LOL","GUI by LATstudio")
 	--	end
 	--end
 	
