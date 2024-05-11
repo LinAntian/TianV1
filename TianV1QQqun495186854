@@ -83,8 +83,8 @@ local function HeartbeatUpdate()
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
-local Window = OrionLib:MakeWindow({Name = "TianV1", HidePremium = false, SaveConfig = true,IntroText = "TianV1", ConfigFolder = "TianV1"})
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "欢迎使用TianV1"; Text ="TianV1"; Duration = 4; })
+local Window = OrionLib:MakeWindow({Name = "TianV1 Script", HidePremium = false, SaveConfig = true,IntroText = "TianV1 Script", ConfigFolder = "TianV1 Script"})
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "欢迎使用TianV1 Script"; Text ="TianV1"; Duration = 4; })
 
 local about = Window:MakeTab({
     Name = "TianV1",
@@ -93,7 +93,7 @@ local about = Window:MakeTab({
 })
 
 CoreGui:SetCore("SendNotification", {
-    Title = "TianV1",
+    Title = "TianV1 Script",
     Text = "已加载成功，感谢使用",
     Duration = 10, 
 })
