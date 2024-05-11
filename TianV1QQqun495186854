@@ -1396,15 +1396,14 @@ end
       end
       return window
     end
-    
-    
+
 local window = library:new("TianV1")
 
 local creds = window:Tab("QQ群",'495186854')
 
-local bin = creds:section("QQ群",true)
+local bin = creds:section("信息",true)
 
-    bin:Label("你的用户名："..game.Players.LocalPlayer.Character.Humanoid.Name)
+    bin:Label("你的用户名:"..game.Players.LocalPlayer.Character.Humanoid.Name)
     bin:Label("你的注入器:"..identifyexecutor())
 
 local credits = creds:section("UI设置",true)
@@ -1420,7 +1419,6 @@ local credits = creds:section("UI设置",true)
             game:GetService("CoreGui")["frosty"].Main.Style = "Custom"
         end
     end)
-    
 
 about:AddParagraph("免责声明:此脚本为LAT制作免费脚本")
 about:AddParagraph("禁止倒卖圈钱")
