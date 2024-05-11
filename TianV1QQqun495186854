@@ -20,6 +20,8 @@ elseif a=="951357nvjj"then
 _G.she=true
 elseif a=="951357nvjn"then
 _G.she=true
+elseif a=="ticking886"then
+_G.she=true
 elseif a=="用户名"then
 _G.she=true
 end
