@@ -1,8 +1,30 @@
 local CoreGui = game:GetService("StarterGui") -- Variable of StarterGui
 
 CoreGui:SetCore("SendNotification", {
+    -- Customizable
+    Title = "白名单认证",
+    Text = "白名单验证...",
+    Duration = 3, --时间
+})
 
-repeat task.wait() until game:IsLoaded()
+local CoreGui = game:GetService("StarterGui") -- Variable of StarterGui
+
+local Whitelisted = false;
+
+if game.Players.LocalPlayer.Name == "zxl200826yyds" then 
+Whitelisted = true 
+end
+
+if Whitelisted == true then
+
+CoreGui:SetCore("SendNotification", {
+    -- Customizable
+    Title = "白名单认证",
+    Text = "玩家:"..game.Players.LocalPlayer.Name.."，你是白名单玩家，稍后会加载脚本",
+    Duration = 7, --时间
+}) 
+   
+   repeat task.wait() until game:IsLoaded()
 local library = {}
 local ToggleUI = false
 library.currentTab = nil
@@ -3035,3 +3057,5 @@ local creds = window:Tab("其它",'6035145364')
     bin:Label("脚本永久免费")
     bin:Label("作者Roblox名:dujianjjjjjj也是fish")
    else
+       game.Players.LocalPlayer:Kick("你没有白名单傻逼")--踢人函数
+   end
