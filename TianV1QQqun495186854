@@ -3,7 +3,7 @@
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
-    Title = "检验您的白名单",
+    Title = "LAT White List系统",
     Text = "正在进行LAT White List验证....",
     Duration = 3, 
 })
@@ -84,7 +84,7 @@ end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 local Window = OrionLib:MakeWindow({Name = "TianV1", HidePremium = false, SaveConfig = true,IntroText = "TianV1", ConfigFolder = "TianV1"})
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "TianV1"; Text ="TianV1"; Duration = 4; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "欢迎使用TianV1"; Text ="TianV1"; Duration = 4; })
 
 local about = Window:MakeTab({
     Name = "TianV1",
@@ -97,6 +97,19 @@ CoreGui:SetCore("SendNotification", {
     Text = "已加载成功",
     Duration = 10, 
 })
+
+CoreGui:SetCore("SendNotification", {
+    Title = "TianV1作者提示:",
+    Text = "免费脚本，不喜勿喷",
+    Duration = 10, 
+})
+
+CoreGui:SetCore("SendNotification", {
+    Title = "TianV1提示:",
+    Text = "有其他需要添加的脚本添加作者",
+    Duration = 10, 
+})
+
 
 
 about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
