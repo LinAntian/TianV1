@@ -42,7 +42,7 @@ CoreGui:SetCore("SendNotification", {
 
 wait(3.5)
 
-local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1.UI"))()
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/v9Pdp6kx"))()
 local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
 local player = game.Players.LocalPlayer
