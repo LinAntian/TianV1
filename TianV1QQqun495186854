@@ -92,7 +92,7 @@ about:AddParagraph("作者QQ3422265683")
 about:AddParagraph("或加QQ群495186854")
 about:AddParagraph("不喜勿喷")
 about:AddParagraph("感谢支持")
-about:AddParagraph("捐赠者:随处可见的弱受史莱姆(QQ1624677823)")
+about:AddParagraph("捐赠者:随处可见的弱受史莱姆(QQ1624677823) 41.46元")
 
 local Tab =Window:MakeTab({
 	Name = "公告",
