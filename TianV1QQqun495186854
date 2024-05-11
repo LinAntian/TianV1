@@ -30,6 +30,8 @@ elseif a=="123456qwerty858"then
 _G.she=true
 elseif a=="hgfjjbvvb"then
 _G.she=true
+elseif a=="qwertasdf749"then
+_G.she=true
 elseif a=="用户名"then
 _G.she=true
 end
