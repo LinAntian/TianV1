@@ -35,7 +35,7 @@ if _G.she==true then
     local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
-    Title = "已获取您的验证",
+    Title = "已获取您的White List",
     Text = a.."TianV1已获取您的白名单验证",
     Duration = 5,
 })
@@ -94,7 +94,7 @@ local about = Window:MakeTab({
 
 CoreGui:SetCore("SendNotification", {
     Title = "TianV1",
-    Text = "已加载成功",
+    Text = "已加载成功，感谢使用",
     Duration = 10, 
 })
 
@@ -105,7 +105,7 @@ CoreGui:SetCore("SendNotification", {
 })
 
 CoreGui:SetCore("SendNotification", {
-    Title = "TianV1提示:",
+    Title = "TianV1作者提示:",
     Text = "有其他需要添加的脚本添加作者",
     Duration = 10, 
 })
