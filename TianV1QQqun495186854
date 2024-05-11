@@ -1399,8 +1399,6 @@ end
 
 local window = library:new("TianV1")
 
-local creds = window:Tab("玩家",'495186854')
-
 local creds = window:Tab("主要",'495186854')
 
 local bin = creds:section("信息",true)
