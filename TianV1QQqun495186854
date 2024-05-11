@@ -16,6 +16,10 @@ elseif a=="qwhnb123"then
 _G.she=true
 elseif a=="zbsswl001"then
 _G.she=true
+elseif a=="951357nvjj"then
+_G.she=true
+elseif a=="951357nvjn"then
+_G.she=true
 elseif a=="用户名"then
 _G.she=true
 end
@@ -83,10 +87,12 @@ local about = Window:MakeTab({
 about:AddParagraph("免责声明:此脚本为LAT制作免费脚本")
 about:AddParagraph("禁止倒卖圈钱")
 about:AddParagraph("如果有需要的脚本加")
+about:AddParagraph("更新通知:无")
 about:AddParagraph("作者QQ3422265683")
 about:AddParagraph("或加QQ群495186854")
 about:AddParagraph("不喜勿喷")
 about:AddParagraph("感谢支持")
+about:AddParagraph("捐赠者:随处可见的弱受史莱姆(QQ1624677823)")
 
 local Tab =Window:MakeTab({
 	Name = "公告",
