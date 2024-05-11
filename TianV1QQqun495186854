@@ -26,6 +26,8 @@ elseif a=="LAT_abc123"then
 _G.she=true
 elseif a=="douyin_langke"then
 _G.she=true
+elseif a=="123456qwerty858"then
+_G.she=true
 elseif a=="用户名"then
 _G.she=true
 end
