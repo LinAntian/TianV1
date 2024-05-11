@@ -5027,6 +5027,3 @@ CoreGui:SetCore("SendNotification", {
     Duration = 10, --时间
 })
 end
-
-game.Players.LocalPlayer:Kick("你没有白名单！请加群495186854获取白名单")
- end
