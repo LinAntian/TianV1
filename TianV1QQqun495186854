@@ -13,7 +13,7 @@ CoreGui:SetCore("SendNotification", {
 
 local a=tostring(game.Players.LocalPlayer.Character);
 
-if a==""then
+if a=="zxl200826yyds"then
 _G.LAT=true
 elseif a=="qwhnb123"then
 _G.LAT=true
