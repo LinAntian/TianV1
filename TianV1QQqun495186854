@@ -569,11 +569,11 @@ Tab:AddButton({
 
 Tab:AddButton({
 
-	Name = "透视",
+	Name = "TianV1.ESP",
 
 	Callback = function()
 
-     loadstring(game:HttpGet('https://pastebin.com/raw/MA8jhPWT'))()
+     loadstring(game:HttpGet('https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1.ESP'))()
 
   	end    
 
