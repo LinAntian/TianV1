@@ -65,6 +65,8 @@ CoreGui:SetCore("SendNotification", {
     Duration = 5,
 })
 
+wait(3.5)
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/Executor/main/Vegax"))()
 
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1.UI"))()
@@ -5011,13 +5013,11 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/sdfesdfsedf/srgtergas
 })
 
 
-
  wait(3.5) --等待三秒
-  --你的脚本
+ --你的脚本
     else --验证失败执行↓
 setclipboard("495186854")
 local CoreGui = game:GetService("StarterGui")
-
 
 CoreGui:SetCore("SendNotification", {
     Title = "验证失败",
@@ -5025,3 +5025,4 @@ CoreGui:SetCore("SendNotification", {
     Duration = 10, --时间
 })
 end
+
