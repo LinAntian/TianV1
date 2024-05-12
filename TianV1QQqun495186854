@@ -5023,13 +5023,13 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/sdfesdfsedf/srgtergas
  wait(3) --等待三秒
   --你的脚本
     else --验证失败执行↓
-setclipboard("LAT")
+setclipboard("495186854")
 local CoreGui = game:GetService("StarterGui")
 
 
 CoreGui:SetCore("SendNotification", {
     Title = "验证失败",
-    Text = "你没有获取白名单!请进群获得白名单:495186854",
+    Text = "你没有获取白名单!请进群获得白名单:495186854(已复制)",
     Duration = 6, --时间
 })
 end
