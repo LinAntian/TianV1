@@ -59,6 +59,8 @@ elseif a=="isjddjdiix"then
 _G.LAT=true
 elseif a=="Blibli_114514"then
 _G.LAT=true
+elseif a=="qqqq66653"then
+_G.LAT=true
 elseif a=="用户名"then
 _G.LAT=true
 end
