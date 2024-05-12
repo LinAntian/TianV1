@@ -5014,6 +5014,20 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/sdfesdfsedf/srgtergas
 setclipboard("LAT")
 local CoreGui = game:GetService("StarterGui")
 
+local function playMusic()
+    
+    local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://7334239757" 
+    sound.Parent = game.Workspace
+
+  
+    sound:Play()
+end
+
+redButton.MouseButton1Down:Connect(playMusic)
+
+ScreenGui.Parent = game.Players.LocalPlayer.PlayerGui
+
 CoreGui:SetCore("SendNotification", {
     Title = "验证失败",
     Text = "你没有获取白名单!请进群获得白名单:495186854(获取成功将会自动打开脚本)",
