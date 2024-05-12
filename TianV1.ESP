@@ -113,7 +113,7 @@ local ESP_MAIN                   = Instance.new('BillboardGui', PLAYER.PlayerGui
 local ESP_DOT                    = Instance.new('Frame', ESP_MAIN)
 local ESP_NAME                   = Instance.new('TextLabel', ESP_MAIN)
 
-ESP_MAIN.Name                    = 'ESP'
+ESP_MAIN.Name                    = '显示玩家名字'
 ESP_MAIN.Adornee                 = BASE
 ESP_MAIN.AlwaysOnTop             = true
 ESP_MAIN.ExtentsOffset           = Vector3.new(0, 1, 0)
