@@ -55,6 +55,10 @@ elseif a=="FnordBaton12319"then
 _G.LAT=true
 elseif a=="zyb15093328118"then
 _G.LAT=true
+elseif a=="isjddjdiix"then
+_G.LAT=true
+elseif a=="Blibli_114514"then
+_G.LAT=true
 elseif a=="用户名"then
 _G.LAT=true
 end
