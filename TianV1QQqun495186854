@@ -47,6 +47,8 @@ elseif a=="qiu_China6"then
 _G.she=true
 elseif a=="nga_13699"then
 _G.she=true
+elseif a=="CN_qweasdzxc"then
+_G.she=true
 elseif a=="用户名"then
 _G.she=true
 end
