@@ -5006,6 +5006,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main
   	end
 })
 
+
  wait(3) --等待三秒
   --你的脚本
     else --验证失败执行↓
