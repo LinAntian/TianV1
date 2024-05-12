@@ -74,7 +74,6 @@ CoreGui:SetCore("SendNotification", {
 wait(3.5)
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/Executor/main/Vegax"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1%E5%B8%A7%E7%8E%87"))()
 
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1.UI"))()
 local LBLG = Instance.new("ScreenGui", getParent)
@@ -160,6 +159,14 @@ about:AddParagraph("不喜勿喷")
 about:AddParagraph("感谢支持")
 about:AddParagraph("更新通知:更新Dahood+UI")
 about:AddParagraph("捐赠者:随处可见的弱受史莱姆(QQ1624677823) 41.46元")
+
+Tab:AddButton({
+	Name = "彩色帧率",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1%E5%B8%A7%E7%8E%87"))()
+  	end
+})
+
 
 local Tab =Window:MakeTab({
 	Name = "公告",
