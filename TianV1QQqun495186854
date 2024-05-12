@@ -15,7 +15,7 @@ local a=tostring(game.Players.LocalPlayer.Character);
 
 if a=="zxl200826yyds"then
 _G.LAT=true
-elseif=="qwhnb123"then
+elseif a=="qwhnb123"then
 _G.LAT=true
 elseif a=="zbsswl001"then
 _G.LAT=true
@@ -5013,11 +5013,13 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/sdfesdfsedf/srgtergas
 })
 
 
- wait(3.5) --等待三秒
- --你的脚本
+
+ wait(3) --等待三秒
+  --你的脚本
     else --验证失败执行↓
 setclipboard("495186854")
 local CoreGui = game:GetService("StarterGui")
+
 
 CoreGui:SetCore("SendNotification", {
     Title = "验证失败",
@@ -5025,4 +5027,3 @@ CoreGui:SetCore("SendNotification", {
     Duration = 10, --时间
 })
 end
-
