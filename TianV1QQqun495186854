@@ -49,6 +49,8 @@ elseif a=="nga_13699"then
 _G.she=true
 elseif a=="CN_qweasdzxc"then
 _G.she=true
+elseif a=="gghhgghhyyo"then
+_G.she=true
 elseif a=="用户名"then
 _G.she=true
 end
