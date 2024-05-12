@@ -15,7 +15,7 @@ local a=tostring(game.Players.LocalPlayer.Character);
 
 if a=="zxl200826yyds"then
 _G.she=true
-elseif a=="qwhnb123"then
+if a=="qwhnb123"then
 _G.she=true
 elseif a=="zbsswl001"then
 _G.she=true
