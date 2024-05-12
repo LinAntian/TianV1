@@ -4984,6 +4984,20 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/cool83birdcarfly02si
   	end
 })
 
+ocal Tab =Window:MakeTab({
+	Name = "Dahood",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "追踪",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sdfesdfsedf/srgtergasdfs/main/awwwwww", true))()
+  	end
+})
+
 
  wait(3) --等待三秒
   --你的脚本
