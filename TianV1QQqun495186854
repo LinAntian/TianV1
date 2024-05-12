@@ -14,49 +14,49 @@ CoreGui:SetCore("SendNotification", {
 local a=tostring(game.Players.LocalPlayer.Character);
 
 if a=="zxl200826yyds"then
-_G.she=true
+_G.LAT=true
 elseif=="qwhnb123"then
-_G.she=true
+_G.LAT=true
 elseif a=="zbsswl001"then
-_G.she=true
+_G.LAT=true
 elseif a=="951357nvjj"then
-_G.she=true
+_G.LAT=true
 elseif a=="951357nvjn"then
-_G.she=true
+_G.LAT=true
 elseif a=="ticking886"then
-_G.she=true
+_G.LAT=true
 elseif a=="LAT_abc123"then
-_G.she=true
+_G.LAT=true
 elseif a=="douyin_langke"then
-_G.she=true
+_G.LAT=true
 elseif a=="123456qwerty858"then
-_G.she=true
+_G.LAT=true
 elseif a=="hgfjjbvvb"then
-_G.she=true
+_G.LAT=true
 elseif a=="qwertasdf749"then
-_G.she=true
+_G.LAT=true
 elseif a=="hehee2181"then
-_G.she=true
+_G.LAT=true
 elseif a=="jntm54188cnm"then
-_G.she=true
+_G.LAT=true
 elseif a=="HAGOU2"then
-_G.she=true
+_G.LAT=true
 elseif a=="Ben123ABC567"then
-_G.she=true
+_G.LAT=true
 elseif a=="qiu_China6"then
-_G.she=true
+_G.LAT=true
 elseif a=="nga_13699"then
-_G.she=true
+_G.LAT=true
 elseif a=="CN_qweasdzxc"then
-_G.she=true
+_G.LAT=true
 elseif a=="gghhgghhyyo"then
-_G.she=true
+_G.LAT=true
 elseif a=="FnordBaton12319"then
-_G.she=true
+_G.LAT=true
 elseif a=="用户名"then
-_G.she=true
+_G.LAT=true
 end
-if _G.she==true then
+if _G.LAT==true then
     local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
@@ -64,8 +64,6 @@ CoreGui:SetCore("SendNotification", {
     Text = a.."TianV1已获取您的白名单验证",
     Duration = 5,
 })
-
-wait(3.5)
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/Executor/main/Vegax"))()
 
@@ -5014,10 +5012,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/sdfesdfsedf/srgtergas
 
 
 
- wait(3) --等待三秒
+ wait(3.5) --等待三秒
   --你的脚本
     else --验证失败执行↓
-setclipboard("LAT")
+setclipboard("495186854")
 local CoreGui = game:GetService("StarterGui")
 
 
