@@ -1334,7 +1334,7 @@ function InitMain()
 	Playername.BorderSizePixel = 0
 	Playername.Size = UDim2.new(1, 0, 0, 20)
 	Playername.Font = Enum.Font.SourceSansBold
-	Playername.Text = "Enter Player Name"
+	Playername.Text = "输入玩家名字"
 	Playername.TextSize = 14
 	Playername.TextWrapped = true
 	
@@ -1346,7 +1346,7 @@ function InitMain()
 	AddToBlacklist.Position = UDim2.new(0, 0, 0, 30)
 	AddToBlacklist.Size = UDim2.new(1, 0, 0, 20)
 	AddToBlacklist.Font = Enum.Font.SourceSansBold
-	AddToBlacklist.Text = "Add to Blacklist"
+	AddToBlacklist.Text = "添加黑名单"
 	AddToBlacklist.TextSize = 14
 	AddToBlacklist.TextWrapped = true
 	
@@ -1474,7 +1474,7 @@ function InitMain()
 	BlacklistToggle.Position = UDim2.new(0, 0, 0, 200)
 	BlacklistToggle.Size = UDim2.new(0, 150, 0, 30)
 	BlacklistToggle.Font = Enum.Font.SourceSansBold
-	BlacklistToggle.Text = "Blacklist"
+	BlacklistToggle.Text = "黑名单"
 	BlacklistToggle.TextColor3 = Color3.new(0.176471, 0.176471, 0.176471)
 	BlacklistToggle.TextSize = 14
 	BlacklistToggle.TextWrapped = true
@@ -1487,7 +1487,7 @@ function InitMain()
 	WhitelistToggle.Position = UDim2.new(1, -150, 0, 200)
 	WhitelistToggle.Size = UDim2.new(0, 150, 0, 30)
 	WhitelistToggle.Font = Enum.Font.SourceSansBold
-	WhitelistToggle.Text = "Friends List"
+	WhitelistToggle.Text = "白名单"
 	WhitelistToggle.TextColor3 = Color3.new(0.176471, 0.176471, 0.176471)
 	WhitelistToggle.TextSize = 14
 	WhitelistToggle.TextWrapped = true
