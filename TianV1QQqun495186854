@@ -43,7 +43,7 @@ elseif a=="HAGOU2"then
 _G.she=true
 elseif a=="Ben123ABC567"then
 _G.she=true
-elseif a=="用户名"then
+elseif a=="qiu_China6"then
 _G.she=true
 end
 if _G.she==true then
