@@ -32,6 +32,8 @@ elseif a=="hgfjjbvvb"then
 _G.she=true
 elseif a=="qwertasdf749"then
 _G.she=true
+elseif a=="hehee2181"then
+_G.she=true
 elseif a=="用户名"then
 _G.she=true
 end
