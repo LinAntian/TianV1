@@ -4998,6 +4998,13 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/sdfesdfsedf/srgtergas
   	end
 })
 
+Tab:AddButton({
+	Name = "自瞄",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/Dahood%20Aimbot", true))()
+  	end
+})
 
  wait(3) --等待三秒
   --你的脚本
