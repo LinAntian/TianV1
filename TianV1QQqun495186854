@@ -4984,7 +4984,7 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/cool83birdcarfly02si
   	end
 })
 
-ocal Tab =Window:MakeTab({
+local Tab =Window:MakeTab({
 	Name = "Dahood",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
