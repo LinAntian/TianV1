@@ -61,6 +61,8 @@ elseif a=="Blibli_114514"then
 _G.LAT=true
 elseif a=="qqqq66653"then
 _G.LAT=true
+elseif a=="czx767"then
+_G.LAT=true
 elseif a=="用户名"then
 _G.LAT=true
 end
@@ -191,7 +193,7 @@ OrionLib:MakeNotification({
 
 })
 
-local Tab = Window:MakeTab({
+local about = Window:MakeTab({
 
 	Name = "黑名单被添加人员",
 
@@ -202,6 +204,7 @@ local Tab = Window:MakeTab({
 })
 
 about:AddParagraph("这里将会显示黑名单被添加人员")
+about:AddParagraph("暂无")
 
 local Tab = Window:MakeTab({
 
