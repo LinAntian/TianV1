@@ -193,6 +193,18 @@ OrionLib:MakeNotification({
 
 local Tab = Window:MakeTab({
 
+	Name = "黑名单被添加人员",
+
+	Icon = "rbxassetid://4483345998",
+
+	PremiumOnly = false
+
+})
+
+about:AddParagraph("这里将会显示黑名单被添加人员")
+
+local Tab = Window:MakeTab({
+
 	Name = "陈脚本",
 
 	Icon = "rbxassetid://4483345998",
