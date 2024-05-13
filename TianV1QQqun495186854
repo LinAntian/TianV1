@@ -13,7 +13,7 @@ CoreGui:SetCore("SendNotification", {
 
 local a=tostring(game.Players.LocalPlayer.Character);
 
-if a==""then
+if a=="zxl200826yyds"then
 _G.LAT=true
 elseif a=="qwhnb123"then
 _G.LAT=true
@@ -192,19 +192,6 @@ OrionLib:MakeNotification({
 	Time = 2
 
 })
-
-local about = Window:MakeTab({
-
-	Name = "黑名单被添加人员",
-
-	Icon = "rbxassetid://4483345998",
-
-	PremiumOnly = false
-
-})
-
-about:AddParagraph("这里将会显示黑名单被添加人员")
-about:AddParagraph("暂无")
 
 local Tab = Window:MakeTab({
 
@@ -5050,34 +5037,4 @@ CoreGui:SetCore("SendNotification", {
     Text = "你没有获取白名单!请进群获得白名单:495186854(已复制)",
     Duration = 3, --时间
 })
-end
-
-local CoreGui = game:GetService("StarterGui")
-
-CoreGui:SetCore("SendNotification", {
-    Title = "正在检查",
-    Text = "请等待...",
-    Duration = 5,
-})
-
-wait(3)
-
-long = game.Players.LocalPlayer.Name
-long = {
-    "zxl200826yyds",
-    "",
-}
-if long then
-   local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "检测结果",
-    Text = "检测到您("..game.Players.LocalPlayer.Name..")是黑名单用户，无法使用TianV1！",
-    Duration = 5,
-})
-   wait(0.3)
-
-       game.Players.LocalPlayer:Kick("你已被添加至黑名单！")
-
-    else 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1QQqun495186854"))()
 end
