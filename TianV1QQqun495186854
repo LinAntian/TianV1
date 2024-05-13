@@ -13,7 +13,7 @@ CoreGui:SetCore("SendNotification", {
 
 local a=tostring(game.Players.LocalPlayer.Character);
 
-if a==""then
+if a=="zxl200826yyds"then
 _G.LAT=true
 elseif a=="qwhnb123"then
 _G.LAT=true
@@ -74,6 +74,35 @@ CoreGui:SetCore("SendNotification", {
     Text = a.."TianV1已获取您的白名单验证",
     Duration = 3,
 })
+
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "TianV1黑名单检测系统",
+    Text = "请等待...",
+    Duration = 5,
+})
+
+wait(3)
+
+long = game.Players.LocalPlayer.Name
+long = {
+    "",
+    "",
+}
+if long then
+   local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "TianV1黑名单检测系统",
+    Text = "检测到您("..game.Players.LocalPlayer.Name..")是黑名单用户，禁止使用TianV1！",
+    Duration = 5,
+})
+   wait(0.3)
+
+       game.Players.LocalPlayer:Kick("你已被TianV1拉入黑名单！")
+
+    else 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1QQqun495186854"))()
 
 wait(3.5)
 
