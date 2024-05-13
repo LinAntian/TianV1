@@ -5037,23 +5037,4 @@ CoreGui:SetCore("SendNotification", {
     Text = "你没有获取白名单!请进群获得白名单:495186854(已复制)",
     Duration = 3, --时间
 })
-long = game.Players.LocalPlayer.Name
-long = {
-    "zxl200826yyds",
-    "",
-}
-
-if long then
-   local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "TianV1 Black List",
-    Text = "检测到您("..game.Players.LocalPlayer.Name..")是黑名单用户，禁止使用TianV1",
-    Duration = 5,
-})
-   wait(0.3)
-
-       game.Players.LocalPlayer:Kick("你已被TianV1作者拉入黑名单！")
-
-    else 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1QQqun495186854"))()
 end
