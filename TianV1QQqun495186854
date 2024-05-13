@@ -13,7 +13,7 @@ CoreGui:SetCore("SendNotification", {
 
 local a=tostring(game.Players.LocalPlayer.Character);
 
-if a=="zxl200826yyds"then
+if a==""then
 _G.LAT=true
 elseif a=="qwhnb123"then
 _G.LAT=true
@@ -76,6 +76,36 @@ CoreGui:SetCore("SendNotification", {
 })
 
 wait(3.5)
+
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "正在检查",
+    Text = "请等待...",
+    Duration = 5,
+})
+
+wait(3)
+
+long = game.Players.LocalPlayer.Name
+long = {
+    "zxl200826yyds",
+    "",
+}
+if long then
+   local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "检测结果",
+    Text = "检测到您("..game.Players.LocalPlayer.Name..")是黑名单用户，无法使用TianV1！",
+    Duration = 5,
+})
+   wait(0.3)
+
+       game.Players.LocalPlayer:Kick("你已被添加至黑名单！")
+
+    else 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1QQqun495186854"))()
+end
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/Executor/main/Vegax"))()
 
