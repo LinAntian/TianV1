@@ -69,6 +69,8 @@ elseif a=="nmsl_93"then
 _G.LAT=true
 elseif a=="shdbfbdbsn"then
 _G.LAT=true
+elseif a=="chenyibe"then
+_G.LAT=true
 elseif a=="用户名"then
 _G.LAT=true
 end
