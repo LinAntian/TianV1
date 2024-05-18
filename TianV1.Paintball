@@ -32,7 +32,7 @@ CatHub.BackgroundColor3 = Color3.new(1, 1, 1)
 CatHub.BackgroundTransparency = 1
 CatHub.Size = UDim2.new(0, 197, 0, 37)
 CatHub.Font = Enum.Font.SourceSansLight
-CatHub.Text = "Cat Hub"
+CatHub.Text = "LATstudio"
 CatHub.TextColor3 = Color3.new(0.658824, 0.658824, 0.658824)
 CatHub.TextScaled = true
 CatHub.TextSize = 14
@@ -72,7 +72,7 @@ OPgunlabel.BackgroundTransparency = 1
 OPgunlabel.Position = UDim2.new(0, 0, 0.172297195, 0)
 OPgunlabel.Size = UDim2.new(0, 84, 0, 33)
 OPgunlabel.Font = Enum.Font.SourceSansLight
-OPgunlabel.Text = "OP Gun:"
+OPgunlabel.Text = "武器增强:"
 OPgunlabel.TextColor3 = Color3.new(1, 1, 1)
 OPgunlabel.TextScaled = true
 OPgunlabel.TextSize = 14
@@ -99,7 +99,7 @@ KillAllLabel.BackgroundTransparency = 1
 KillAllLabel.Position = UDim2.new(0, 0, 0.320945859, 0)
 KillAllLabel.Size = UDim2.new(0, 84, 0, 33)
 KillAllLabel.Font = Enum.Font.SourceSansLight
-KillAllLabel.Text = "Kill All:"
+KillAllLabel.Text = "杀死全部:"
 KillAllLabel.TextColor3 = Color3.new(1, 1, 1)
 KillAllLabel.TextScaled = true
 KillAllLabel.TextSize = 14
@@ -294,7 +294,7 @@ local function XRVVL_fake_script() -- bigboykiller.KillAllScript
 	
 	script.Parent.MouseButton1Down:Connect(function()
 	script.Parent.Text = "✓"
-	script.Parent.Parent.ifkillall.Text = "Left Click to start killing!"
+	script.Parent.Parent.ifkillall.Text = "点一下左键即可开始乱杀"
 	
 	local mt = getrawmetatable(game)
 	local runservice = game:GetService("RunService")
