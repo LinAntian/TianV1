@@ -133,7 +133,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "欢迎使用
 
 local about = Window:MakeTab({
     Name = "TianV1",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://8610328800",
     PremiumOnly = false
 })
 
