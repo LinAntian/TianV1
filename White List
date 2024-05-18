@@ -1,3 +1,4 @@
+--这是白名单的模板，未加密
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
@@ -26,7 +27,7 @@ wait(3.5)
  wait(3) --等待三秒
   --你的脚本
     else --验证失败执行↓
-setclipboard("LAT")
+setclipboard("495186854")
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
