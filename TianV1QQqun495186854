@@ -95,7 +95,7 @@ if _G.LAT==true then
 CoreGui:SetCore("SendNotification", {
     Title = "已获取您的White List",
     Text = a.."TianV1已获取您的白名单验证",
-    Duration = 5,
+    Duration = 3,
 })
 
 wait(3.5)
@@ -148,7 +148,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "欢迎使用
 
 local about = Window:MakeTab({
     Name = "TianV1",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://8610328800",
     PremiumOnly = false
 })
 
@@ -179,12 +179,12 @@ about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
 
 about:AddParagraph("免责声明:此脚本为LAT制作免费脚本")
 about:AddParagraph("禁止倒卖圈钱")
-about:AddParagraph("如果有需要的脚本加↓↓↓")
+about:AddParagraph("如果有需要添加的脚本加↓↓↓")
 about:AddParagraph("作者QQ3422265683")
 about:AddParagraph("或加QQ群495186854")
 about:AddParagraph("不喜勿喷")
 about:AddParagraph("感谢支持")
-about:AddParagraph("更新通知:无")
+about:AddParagraph("更新通知:TianV1-Ohio")
 about:AddParagraph("捐赠者:随处可见的弱受史莱姆(QQ1624677823) 41.46元")
 
 local Tab =Window:MakeTab({
@@ -3613,7 +3613,7 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
 
-    Name = "俄亥俄州",
+    Name = "Ohio",
 
 	Icon = "rbxassetid://4483345998",
 
@@ -3623,11 +3623,11 @@ local Tab = Window:MakeTab({
 
 Tab:AddButton({
 
-	Name = "俄亥俄州",
+	Name = "TianV1-Ohio",
 
 	Callback = function()
 
-loadstring(game:HttpGet("https://pastebin.com/raw/hkvHeHed",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1.Ohio"))()
 
 end
 
@@ -5050,13 +5050,13 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/sdfesdfsedf/srgtergas
  wait(3) --等待三秒
   --你的脚本
     else --验证失败执行↓
-setclipboard("LAT")
+setclipboard("495186854")
 local CoreGui = game:GetService("StarterGui")
 
 
 CoreGui:SetCore("SendNotification", {
     Title = "验证失败",
-    Text = "你没有获取白名单!请进群获得白名单:495186854(获取成功将会自动打开脚本)",
-    Duration = 10, --时间
+    Text = "你没有获取白名单!请进群获得白名单:495186854(已复制)",
+    Duration = 3, --时间
 })
 end
