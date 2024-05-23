@@ -215,6 +215,17 @@ OrionLib:MakeNotification({
 
 })
 
+local about = Window:MakeTab({
+    Name = "TianV1-贱人名单",
+    Icon = "rbxassetid://8610328800",
+    PremiumOnly = false
+})
+
+about:AddParagraph("徐泽允330204200912078011")
+about:AddParagraph("天眼查开户战神")
+about:AddParagraph("无敌了")
+about:AddParagraph("教育热线:18758426284")
+
 local Tab = Window:MakeTab({
 
 	Name = "陈脚本",
