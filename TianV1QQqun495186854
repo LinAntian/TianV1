@@ -169,6 +169,8 @@ CoreGui:SetCore("SendNotification", {
     Duration = 10, 
 })
 
+
+
 about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
 about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
 about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
@@ -183,7 +185,6 @@ about:AddParagraph("不喜勿喷")
 about:AddParagraph("感谢支持")
 about:AddParagraph("更新通知:新增TianV1-Ohio")
 about:AddParagraph("捐赠者:随处可见的弱受史莱姆(QQ1624677823) 41.46元")
-
 
 local Tab =Window:MakeTab({
 	Name = "公告",
