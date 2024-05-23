@@ -183,7 +183,7 @@ about:AddParagraph("作者QQ3422265683")
 about:AddParagraph("或加QQ群495186854")
 about:AddParagraph("不喜勿喷")
 about:AddParagraph("感谢支持")
-about:AddParagraph("更新通知:新增TianV1-贱人名单")
+about:AddParagraph("更新通知:新增TianV1-Ohio")
 about:AddParagraph("捐赠者:随处可见的弱受史莱姆(QQ1624677823) 41.46元")
 
 
@@ -214,34 +214,6 @@ OrionLib:MakeNotification({
 	Time = 2
 
 })
-
-local Tab =Window:MakeTab({
-	Name = "TianV1-贱人名单",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-Tab:AddButton({
-	Name = "徐泽允330204200912078011(点击复制)",
-	Callback = function()
-     setclipboard("徐泽允330204200912078011")
-  	end
-})
-
-Tab:AddButton({
-	Name = "无敌天眼查开户战神",
-	Callback = function()
-     setclipboard("TianV1 Script NB")
-  	end
-})
-
-Tab:AddButton({
-	Name = "复制教育热线",
-	Callback = function()
-     setclipboard("教育热线:18758426284")
-  	end
-})
-
 
 local Tab = Window:MakeTab({
 
