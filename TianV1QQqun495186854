@@ -169,8 +169,6 @@ CoreGui:SetCore("SendNotification", {
     Duration = 10, 
 })
 
-
-
 about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
 about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
 about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
