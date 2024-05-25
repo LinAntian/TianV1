@@ -1514,13 +1514,13 @@ local espb = makeutilbutton("esp")
 local esp = false
 espb.MouseButton1Click:Connect(function()
 	esp = not esp
-	espb.Text = "esp" .. ((esp and " (Enabled)") or "")
+	espb.Text = "透视" .. ((esp and "(开启)") or "")
 end)
 local teamcheckb = makeutilbutton("esp team check")
 local espTeamCheck = false
 teamcheckb.MouseButton1Click:Connect(function()
 	espTeamCheck = not espTeamCheck
-	teamcheckb.Text = "esp team check" .. ((espTeamCheck and " (Enabled)") or "")
+	teamcheckb.Text = "团队分辨透视" .. ((espTeamCheck and "(开启)") or "")
 end)
 
 local espcolor = Color3.fromRGB(255, 0, 0)
@@ -1614,7 +1614,7 @@ makeutilbutton("instant leave").MouseButton1Click:Connect(function()
 end)
 
 
-local cbringframe = makeFrame(scrollingFrame, "cbring", Color3.fromRGB(15, 100, 15))
+local cbringframe = makeFrame(scrollingFrame, "把人逮过来", Color3.fromRGB(15, 100, 15))
 local cbringscroll = cbringframe.ScrollingFrame
 
 local cbring = {}
@@ -1684,7 +1684,7 @@ cbringallbtn.BorderSizePixel = 0
 cbringallbtn.Position = UDim2.new(1, -57, 0, 2)
 cbringallbtn.Size = UDim2.new(0, 55, 1, -4)
 cbringallbtn.Font = Enum.Font.SourceSans
-cbringallbtn.Text = "+ add all"
+cbringallbtn.Text = "+ 加入所有人"
 cbringallbtn.TextColor3 = Color3.fromRGB(206, 206, 206)
 cbringallbtn.TextSize = 14.000
 cbringallbtn.MouseButton1Click:Connect(function()
