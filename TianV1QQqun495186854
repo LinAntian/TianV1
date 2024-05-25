@@ -79,7 +79,6 @@ elseif a=="bohan322"then
 _G.LAT=true
 elseif a=="eyfqpdy61"then
 _G.LAT=true
-end
 elseif a=="666pppl0"then
 _G.LAT=true
 elseif a=="BHan_N"then
@@ -88,6 +87,7 @@ elseif a=="wkdgak6"then
 _G.LAT=true
 elseif a=="用户名"then
 _G.LAT=true
+end
 if _G.LAT==true then
     local CoreGui = game:GetService("StarterGui")
 
