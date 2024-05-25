@@ -3673,6 +3673,18 @@ end
 
 })
 
+Tab:AddButton({
+
+	Name = "Ohio-功能多",
+
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rxn-xyz/Ohio./main/Ohio.lua",true))()
+
+end
+
+})
+
 local Tab = Window:MakeTab({
 
     Name = "蜂群模拟器",
