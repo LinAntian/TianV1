@@ -382,7 +382,7 @@ local function makeplrbutton(buttontext)
 	button.TextSize = 15.000
 	return button
 end
-makeplrbutton("goto").MouseButton1Click:Connect(function()
+makeplrbutton("追踪").MouseButton1Click:Connect(function()
 	local c = lp.Character
 	if c and c.Parent then
 		local tp = gp(c, "HumanoidRootPart", "BasePart") or gp(c, "Head", "BasePart") or c:FindFirstChildWhichIsA("BasePart")
@@ -396,7 +396,7 @@ makeplrbutton("goto").MouseButton1Click:Connect(function()
 					else
 						weldtp(tp, to.CFrame)
 					end
-					notify("goto: " .. currentplayer.Name)
+					notify("追踪玩家: " .. currentplayer.Name)
 				else
 					notify("no target part found")
 				end
@@ -410,7 +410,7 @@ makeplrbutton("goto").MouseButton1Click:Connect(function()
 		notify("character not found")
 	end
 end)
-viewbutton = makeplrbutton("view")
+viewbutton = makeplrbutton("玩家视角")
 viewbutton.MouseButton1Click:Connect(function()
     if viewedPlayer == currentplayer then
         unview()
@@ -420,7 +420,7 @@ viewbutton.MouseButton1Click:Connect(function()
 	end
 end)
 
-local cbringb = makeplrbutton("cbring")
+local cbringb = makeplrbutton("逮人")
 
 local function noanimations()
 	local c = lp.Character
@@ -435,10 +435,10 @@ local function noanimations()
 				v:Stop()
 			end
 		else
-			notify("humanoid not found")
+			notify("没有找到")
 		end
 	else
-		notify("character not found")
+		notify("没有找到")
 	end
 end
 
