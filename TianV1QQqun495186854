@@ -95,6 +95,8 @@ elseif a=="wzy114514com"then
 _G.LAT=true
 elseif a=="Augw271"then
 _G.LAT=true
+elseif a=="qwe123_W1145"then
+_G.LAT=true
 elseif a=="用户名"then
 _G.LAT=true
 end
