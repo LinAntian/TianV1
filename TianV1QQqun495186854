@@ -87,6 +87,8 @@ elseif a=="wkdgak6"then
 _G.LAT=true
 elseif a=="fjbcghbvcffgui"then
 _G.LAT=true
+elseif a=="xxhxc6"then
+_G.LAT=true
 elseif a=="用户名"then
 _G.LAT=true
 end
