@@ -99,6 +99,8 @@ elseif a=="qwe123_W1145"then
 _G.LAT=true
 elseif a=="wkdgak7"then
 _G.LAT=true
+elseif a=="HackLAT9994864"then
+_G.LAT=true
 elseif a=="用户名"then
 _G.LAT=true
 end
