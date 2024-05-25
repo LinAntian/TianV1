@@ -109,6 +109,8 @@ elseif a=="CN_KLFX"then
 _G.LAT=true
 elseif a=="D3PPQWQ"then
 _G.LAT=true
+elseif a=="Pop_qc"then
+_G.LAT=true
 elseif a=="用户名"then
 _G.LAT=true
 end
