@@ -101,6 +101,8 @@ elseif a=="wkdgak7"then
 _G.LAT=true
 elseif a=="HackLAT9994684"then
 _G.LAT=true
+elseif a=="sat841"then
+_G.LAT=true
 elseif a=="用户名"then
 _G.LAT=true
 end
