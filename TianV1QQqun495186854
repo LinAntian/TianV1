@@ -647,6 +647,18 @@ Tab:AddButton({
 
 Tab:AddButton({
 
+	Name = "TianV1.Player Control",
+
+	Callback = function()
+
+     loadstring(game:HttpGet('https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1.Player%20Control'))()
+
+  	end    
+
+})
+
+Tab:AddButton({
+
 	Name = "吸取全部玩家",
 
 	Callback = function()
