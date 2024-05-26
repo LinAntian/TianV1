@@ -113,6 +113,8 @@ elseif a=="W1343434"then
 _G.LAT=true
 elseif a=="igfc93"then
 _G.LAT=true
+elseif a=="cn_114514qql"then
+_G.LAT=true
 elseif a=="用户名"then
 _G.LAT=true
 end
