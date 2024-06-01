@@ -16,8 +16,8 @@ local OrionLib = {
 			Second = Color3.fromRGB(233, 44, 45),
 			Stroke = Color3.fromRGB(55, 12, 35),
 			Divider = Color3.fromRGB(87, 54, 21),
-			Text = Color3.fromRGB(123, 54, 134),
-			TextDark = Color3.fromRGB(12, 92, 23)
+			Text = Color3.fromRGB(99, 54, 134),
+			TextDark = Color3.fromRGB(99, 92, 23)
 		}
 	},
 	SelectedTheme = "Default",
