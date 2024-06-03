@@ -117,6 +117,8 @@ elseif a=="qweqwe2580258007"then
 _G.LAT=true
 elseif a=="LAT_21932"then
 _G.LAT=true
+elseif a=="114514hdjjj"then
+_G.LAT=true
 elseif a=="用户名"then
 _G.LAT=true
 end
