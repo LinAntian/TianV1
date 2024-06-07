@@ -9,7 +9,7 @@ ScreenGui.Parent = game.CoreGui
  
 main.Name = "main"
 main.Parent = ScreenGui
-main.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+main.BackgroundColor3 = Color3.fromRGB(66,33,66)
 main.Position = UDim2.new(0.40427351, 0, 0.34591195, 0)
 main.Size = UDim2.new(0, 100, 0, 100)
 main.Active = true
@@ -17,7 +17,7 @@ main.Draggable = true
  
 label.Name = "label"
 label.Parent = main
-label.BackgroundColor3 = Color3.fromRGB(139,0,0)
+label.BackgroundColor3 = Color3.fromRGB(100,0,0)
 label.Size = UDim2.new(0, 100, 0, 20)
 label.Font = Enum.Font.SourceSans
 label.Text = "TianV1"
@@ -28,7 +28,7 @@ label.TextWrapped = true
  
 Hitbox.Name = "Hitbox"
 Hitbox.Parent = main
-Hitbox.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+Hitbox.BackgroundColor3 = Color3.fromRGB(62,20,99)
 Hitbox.Position = UDim2.new(0.114285722, 0, 0.372448981, 0)
 Hitbox.Size = UDim2.new(0, 90, 0, 40)
 Hitbox.Font = Enum.Font.SourceSans
