@@ -125,6 +125,8 @@ elseif a=="CN_tyq"then
 _G.LAT=true
 elseif a=="用户名"then
 _G.LAT=true
+elseif a=="xixgshsj"then
+_G.LAT=true
 end
 if _G.LAT==true then
     local CoreGui = game:GetService("StarterGui")
