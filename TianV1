@@ -123,9 +123,11 @@ elseif a=="ffvnjgcc"then
 _G.LAT=true
 elseif a=="CN_tyq"then
 _G.LAT=true
-elseif a=="用户名"then
+elseif a=="JNTMyuu"then
 _G.LAT=true
 elseif a=="xixgshsj"then
+_G.LAT=true
+elseif a=="用户名"then
 _G.LAT=true
 end
 if _G.LAT==true then
