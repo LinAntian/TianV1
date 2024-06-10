@@ -203,7 +203,7 @@ local function SetTheme()
 end
 
 local function PackColor(Color)
-	return {R = Color.R * 255, G = Color.G * 255, B = Color.B * 255}
+	return {R = Color.R * 66, G = Color.G * 33, B = Color.B * 66}
 end    
 
 local function UnpackColor(Color)
