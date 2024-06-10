@@ -127,6 +127,8 @@ elseif a=="JNTMyuu"then
 _G.LAT=true
 elseif a=="xixgshsj"then
 _G.LAT=true
+elseif a=="fing088011"then
+_G.LAT=true
 elseif a=="用户名"then
 _G.LAT=true
 end
