@@ -133,6 +133,8 @@ elseif a=="ajd50009"then
 _G.LAT=true
 elseif a=="ajd50007"then
 _G.LAT=true
+elseif a=="MIUI15pro"then
+_G.LAT=true
 elseif a=="用户名"then
 _G.LAT=true
 end
