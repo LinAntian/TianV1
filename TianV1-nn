@@ -1,3 +1,76 @@
+--[[
+
+	Nico's Nextbot Killer
+	Created by Devamspion
+
+]]
+
+--[[if game.GameId ~= 10118559731 then
+	warn("\nNico's Nextbot Killer : Created by Devamspion on V3rmillion.\n\nLoading Unsuccessful.\n\nPlease only use this script on the official nico's nextbots.")
+	return
+end]]
+
+--// Toggles
+
+local ESPEnabled = false
+local FasterRespawnEnabled = false
+local DoorSpamEnabled = false
+
+--// Variables
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local UIS = game:GetService("UserInputService")
+local boxes = {}
+
+--// GUI
+
+local ScreenGui = Instance.new("ScreenGui")
+local Intro = Instance.new("ImageLabel")
+local Killa = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local Name = Instance.new("TextLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local ESP = Instance.new("TextLabel")
+local FasterRe = Instance.new("TextLabel")
+local DoorSpam = Instance.new("TextLabel")
+local Startup = Instance.new("Sound",ScreenGui)
+local scream = Instance.new("Sound",ScreenGui)
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
+ScreenGui.ResetOnSpawn = false
+
+Startup.SoundId = "rbxassetid://5857614116"
+Startup.Name = "Startup"
+
+scream.SoundId = "rbxassetid://252192336"
+scream.Name = "Scream"
+
+Intro.Name = "Intro"
+Intro.Parent = ScreenGui
+Intro.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Intro.BackgroundTransparency = 1.000
+Intro.Position = UDim2.new(0.40239343, 0, 0.338689744, 0)
+Intro.Size = UDim2.new(0.195213169, 0, 0.322620511, 0)
+Intro.Visible = false
+Intro.Image = "http://www.roblox.com/asset/?id=10529044500"
+
+Killa.Name = "Killa"
+Killa.Parent = Intro
+Killa.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Killa.BackgroundTransparency = 1.000
+Killa.BorderSizePixel = 0
+Killa.Position = UDim2.new(-0.153256699, 0, 1.21072805, 0)
+Killa.Size = UDim2.new(1.30651343, 0, 0.42145595, 0)
+Killa.Visible = false
+Killa.Font = Enum.Font.Creepster
+Killa.Text = "KILLER"
+Killa.TextColor3 = Color3.fromRGB(255, 0, 4)
+Killa.TextScaled = true
+Killa.TextSize = 14.000
+Killa.TextWrapped = true
+
 UICorner.CornerRadius = UDim.new(0.0799999982, 0)
 UICorner.Parent = Intro
 
