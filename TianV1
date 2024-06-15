@@ -152,6 +152,8 @@ CoreGui:SetCore("SendNotification", {
 wait(3.5)
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/Executor/main/Vegax"))()
+scream.SoundId = "rbxassetid://7908417389"
+scream.Name = "Scream"
 
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1.UI"))()
 local LBLG = Instance.new("ScreenGui", getParent)
