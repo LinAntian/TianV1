@@ -141,6 +141,8 @@ elseif a=="polliool"then
 _G.LAT=true
 elseif a=="dittolol_idk"then
 _G.LAT=true
+elseif a=="ilaikexiaoyu"then
+_G.LAT=true
 elseif a=="用户名"then
 _G.LAT=true
 end
