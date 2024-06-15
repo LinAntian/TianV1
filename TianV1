@@ -5171,7 +5171,7 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/LinAntian/TianV1/mai
 
 Tab:AddButton({
 
-	Name = "虚拟键盘(H-J-K键开启脚本)",
+	Name = "虚拟键盘(H-J-K键开启TianV1-nn脚本)",
 
 	Callback = function()
 
