@@ -96,7 +96,7 @@ FasterRe.Position = UDim2.new(0, 0, 0.911001265, 0)
 FasterRe.Size = UDim2.new(0.994764388, 0, 0.0395550057, 0)
 FasterRe.Visible = false
 FasterRe.Font = Enum.Font.SourceSansItalic
-FasterRe.Text = "直接重生: 关闭"
+FasterRe.Text = "快速重生: 关闭"
 FasterRe.TextColor3 = Color3.fromRGB(255, 255, 255)
 FasterRe.TextScaled = true
 FasterRe.TextSize = 14.000
@@ -156,10 +156,10 @@ function Toggler(whattotoggle)
 		end
 	elseif whattotoggle == "FasterRespawn" then
 		if FasterRespawnEnabled == false then
-			FasterRe.Text = "直接重生: 关闭"
+			FasterRe.Text = "快速重生: 关闭"
 			FasterRespawnEnabled = true
 		else
-			FasterRe.Text = "直接重生: 开启"
+			FasterRe.Text = "快速重生: 开启"
 			FasterRespawnEnabled = false
 		end
 	elseif whattotoggle == "DoorSpam" then
