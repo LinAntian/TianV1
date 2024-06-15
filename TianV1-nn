@@ -26,7 +26,7 @@ ScreenGui.ResetOnSpawn = false
 Startup.SoundId = "rbxassetid://5857614116"
 Startup.Name = "Startup"
 
-scream.SoundId = "rbxassetid://252192336"
+scream.SoundId = "rbxassetid://5857614116"
 scream.Name = "Scream"
 
 Intro.Name = "Intro"
@@ -40,7 +40,7 @@ Intro.Image = "http://www.roblox.com/asset/?id=10529044500"
 
 Killa.Name = "Killa"
 Killa.Parent = Intro
-Killa.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Killa.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
 Killa.BackgroundTransparency = 1.000
 Killa.BorderSizePixel = 0
 Killa.Position = UDim2.new(-0.153256699, 0, 1.21072805, 0)
