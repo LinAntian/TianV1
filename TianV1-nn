@@ -81,7 +81,7 @@ ESP.Position = UDim2.new(0, 0, 0.871446252, 0)
 ESP.Size = UDim2.new(0.994764388, 0, 0.0395550057, 0)
 ESP.Visible = false
 ESP.Font = Enum.Font.SourceSansItalic
-ESP.Text = "透视下一个机器人: 关闭"
+ESP.Text = "透视Nextbot: 关闭"
 ESP.TextColor3 = Color3.fromRGB(255, 255, 255)
 ESP.TextScaled = true
 ESP.TextSize = 14.000
@@ -143,7 +143,7 @@ function Toggler(whattotoggle)
 					boxes[v].Enabled = true
 				end
 			end
-			ESP.Text = "透视下一个机器人-开启"
+			ESP.Text = "透视Nextbot：开启"
 			ESPEnabled = true
 		else
 			for i,v in pairs(game.Workspace.bots:GetChildren()) do
@@ -151,7 +151,7 @@ function Toggler(whattotoggle)
 					boxes[v].Enabled = false
 				end
 			end
-			ESP.Text = "透视下一个机器人：关闭"
+			ESP.Text = "透视Nextbot：关闭"
 			ESPEnabled = false
 		end
 	elseif whattotoggle == "FasterRespawn" then
@@ -252,4 +252,4 @@ UIS.InputBegan:Connect(function(k)
 	end
 end)
 
-warn("\nNico's Nextbot Killer : Created by Devamspion on V3rmillion.\n\nLoading Successful.\n\nPress H to activate Nextbot ESP.\nPress J to activate Faster Respawn.\nPress K to activate Door Spam.")
+warn("\nTianV1-nn : Made by LAT\n\n当前状态:已加载成功!\n\n开启透视Nextbot按H\n开启自动重生按J\n开启自动开/关门按K")
