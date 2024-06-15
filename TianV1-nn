@@ -1,29 +1,11 @@
---[[
-
-	Nico's Nextbot Killer
-	Created by Devamspion
-
-]]
-
---[[if game.GameId ~= 10118559731 then
-	warn("\nNico's Nextbot Killer : Created by Devamspion on V3rmillion.\n\nLoading Unsuccessful.\n\nPlease only use this script on the official nico's nextbots.")
-	return
-end]]
-
---// Toggles
-
 local ESPEnabled = false
 local FasterRespawnEnabled = false
 local DoorSpamEnabled = false
-
---// Variables
 
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
 local UIS = game:GetService("UserInputService")
 local boxes = {}
-
---// GUI
 
 local ScreenGui = Instance.new("ScreenGui")
 local Intro = Instance.new("ImageLabel")
@@ -65,7 +47,7 @@ Killa.Position = UDim2.new(-0.153256699, 0, 1.21072805, 0)
 Killa.Size = UDim2.new(1.30651343, 0, 0.42145595, 0)
 Killa.Visible = false
 Killa.Font = Enum.Font.Creepster
-Killa.Text = "KILLER"
+Killa.Text = "TianV1-nn"
 Killa.TextColor3 = Color3.fromRGB(255, 0, 4)
 Killa.TextScaled = true
 Killa.TextSize = 14.000
@@ -82,7 +64,7 @@ Name.BorderSizePixel = 0
 Name.Position = UDim2.new(-0.153256699, 0, 1, 0)
 Name.Size = UDim2.new(1.30651343, 0, 0.275862068, 0)
 Name.Font = Enum.Font.SourceSansBold
-Name.Text = "Nico's Nextbot"
+Name.Text = "TianV1-nn"
 Name.TextColor3 = Color3.fromRGB(255, 255, 255)
 Name.TextScaled = true
 Name.TextSize = 14.000
@@ -99,7 +81,7 @@ ESP.Position = UDim2.new(0, 0, 0.871446252, 0)
 ESP.Size = UDim2.new(0.994764388, 0, 0.0395550057, 0)
 ESP.Visible = false
 ESP.Font = Enum.Font.SourceSansItalic
-ESP.Text = "Nextbot ESP: Disabled"
+ESP.Text = "透视下一个机器人: 关闭"
 ESP.TextColor3 = Color3.fromRGB(255, 255, 255)
 ESP.TextScaled = true
 ESP.TextSize = 14.000
@@ -129,7 +111,7 @@ DoorSpam.Position = UDim2.new(0, 0, 0.950556278, 0)
 DoorSpam.Size = UDim2.new(0.994764388, 0, 0.0395550057, 0)
 DoorSpam.Visible = false
 DoorSpam.Font = Enum.Font.SourceSansItalic
-DoorSpam.Text = "Door Spam: Disabled"
+DoorSpam.Text = "自动开/关门: 关闭"
 DoorSpam.TextColor3 = Color3.fromRGB(255, 255, 255)
 DoorSpam.TextScaled = true
 DoorSpam.TextSize = 14.000
@@ -161,7 +143,7 @@ function Toggler(whattotoggle)
 					boxes[v].Enabled = true
 				end
 			end
-			ESP.Text = "Nextbot ESP: Enabled"
+			ESP.Text = "透视下一个机器人-开启"
 			ESPEnabled = true
 		else
 			for i,v in pairs(game.Workspace.bots:GetChildren()) do
@@ -169,7 +151,7 @@ function Toggler(whattotoggle)
 					boxes[v].Enabled = false
 				end
 			end
-			ESP.Text = "Nextbot ESP: Disabled"
+			ESP.Text = "透视下一个机器人：关闭"
 			ESPEnabled = false
 		end
 	elseif whattotoggle == "FasterRespawn" then
@@ -182,10 +164,10 @@ function Toggler(whattotoggle)
 		end
 	elseif whattotoggle == "DoorSpam" then
 		if DoorSpamEnabled == false then
-			DoorSpam.Text = "Door Spam: Enabled"
+			DoorSpam.Text = "自动开/关门: 开启"
 			DoorSpamEnabled = true
 		else
-			DoorSpam.Text = "Door Spam: Disabled"
+			DoorSpam.Text = "自动开/关门: 关闭"
 			DoorSpamEnabled = false
 		end
 	end
