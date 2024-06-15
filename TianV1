@@ -143,6 +143,12 @@ elseif a=="dittolol_idk"then
 _G.LAT=true
 elseif a=="ilaikexiaoyu"then
 _G.LAT=true
+elseif a=="zo_Omc"then
+_G.LAT=true
+elseif a=="123456jh68"then
+_G.LAT=true
+elseif a=="xzxxzx04"then
+_G.LAT=true
 elseif a=="用户名"then
 _G.LAT=true
 end
