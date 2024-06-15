@@ -5162,11 +5162,23 @@ local Tab =Window:MakeTab({
 })
 
 Tab:AddButton({
-	Name = "TianV1-nn(bot有的可能显示不出来)",
+	Name = "TianV1-nn(手机端搭配下方脚本使用)",
 	Callback = function()
 
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1-nn')))()
   	end
+})
+
+Tab:AddButton({
+
+	Name = "虚拟键盘(H-J-K键开启脚本)",
+
+	Callback = function()
+
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+
+  	end    
+
 })
 
 
