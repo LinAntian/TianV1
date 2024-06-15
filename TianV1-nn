@@ -1,73 +1,200 @@
-local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1-nnUI')))()
+UICorner.CornerRadius = UDim.new(0.0799999982, 0)
+UICorner.Parent = Intro
 
-local w = library:CreateWindow("TianV1-nn")
+Name.Name = "Name"
+Name.Parent = Intro
+Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name.BackgroundTransparency = 1.000
+Name.BorderSizePixel = 0
+Name.Position = UDim2.new(-0.153256699, 0, 1, 0)
+Name.Size = UDim2.new(1.30651343, 0, 0.275862068, 0)
+Name.Font = Enum.Font.SourceSansBold
+Name.Text = "Nico's Nextbot"
+Name.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name.TextScaled = true
+Name.TextSize = 14.000
+Name.TextWrapped = true
 
-local b = w:CreateFolder("主页")
+UIAspectRatioConstraint.Parent = Intro
+UIAspectRatioConstraint.AspectRatio = 1.209
 
-local c = w:CreateFolder("其他")
+ESP.Name = "ESP"
+ESP.Parent = ScreenGui
+ESP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESP.BackgroundTransparency = 1.000
+ESP.Position = UDim2.new(0, 0, 0.871446252, 0)
+ESP.Size = UDim2.new(0.994764388, 0, 0.0395550057, 0)
+ESP.Visible = false
+ESP.Font = Enum.Font.SourceSansItalic
+ESP.Text = "Nextbot ESP: Disabled"
+ESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESP.TextScaled = true
+ESP.TextSize = 14.000
+ESP.TextWrapped = true
+ESP.TextXAlignment = Enum.TextXAlignment.Right
 
-b:Button("鬼esp",function()
-   esp()
-end)
+FasterRe.Name = "FasterRe"
+FasterRe.Parent = ScreenGui
+FasterRe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FasterRe.BackgroundTransparency = 1.000
+FasterRe.Position = UDim2.new(0, 0, 0.911001265, 0)
+FasterRe.Size = UDim2.new(0.994764388, 0, 0.0395550057, 0)
+FasterRe.Visible = false
+FasterRe.Font = Enum.Font.SourceSansItalic
+FasterRe.Text = "Faster Respawn: Disabled"
+FasterRe.TextColor3 = Color3.fromRGB(255, 255, 255)
+FasterRe.TextScaled = true
+FasterRe.TextSize = 14.000
+FasterRe.TextWrapped = true
+FasterRe.TextXAlignment = Enum.TextXAlignment.Right
 
-b:Button('无敌点位1",function()
-   teleport1()
-end)
+DoorSpam.Name = "DoorSpam"
+DoorSpam.Parent = ScreenGui
+DoorSpam.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DoorSpam.BackgroundTransparency = 1.000
+DoorSpam.Position = UDim2.new(0, 0, 0.950556278, 0)
+DoorSpam.Size = UDim2.new(0.994764388, 0, 0.0395550057, 0)
+DoorSpam.Visible = false
+DoorSpam.Font = Enum.Font.SourceSansItalic
+DoorSpam.Text = "Door Spam: Disabled"
+DoorSpam.TextColor3 = Color3.fromRGB(255, 255, 255)
+DoorSpam.TextScaled = true
+DoorSpam.TextSize = 14.000
+DoorSpam.TextWrapped = true
+DoorSpam.TextXAlignment = Enum.TextXAlignment.Right
 
-b:Button("无敌点位2",function()
-   teleport2()
-end)
+--// Intro
 
-c:Button(" made by",function()
-   print(" made by")
-end)
+wait(1)
+Intro.Visible = true
+Startup:Play()
+wait(2)
+scream:Play()
+Killa.Visible = true
+wait(2)
+Intro.Visible = false
 
-c:Button("TianV1 Script",function()
-   print("LAT")
-end)
+DoorSpam.Visible = true
+FasterRe.Visible = true
+ESP.Visible = true
 
-c:Button("Discord in devcon",function()
-   print("TianV1-nn")
-end)
+--// Functions
 
-
-c:DestroyGui()
-
-
-function esp()
-  while task.wait(15) do
-     for __,v in pairs(game:GetService("Workspace").bots:GetDescendants()) do
-      if v:IsA("Model") then
-        local a = Instance.new("BillboardGui",v)
-        a.Name = "Sex"
-        a.Size = UDim2.new(7,0,7,0)
-        a.AlwaysOnTop = true
-        a.MaxDistance = 250
-        local b = Instance.new("Frame",a)
-        b.Size = UDim2.new(1,0, 1,0)
-        b.BackgroundTransparency = 0.80
-        b.BorderSizePixel = 0
-        b.BackgroundColor3 = Color3.new(0, 0, 0)
-        local c = Instance.new('TextLabel',b)
-        c.Size = UDim2.new(2,0,2,0)
-        c.BorderSizePixel = 0
-        c.TextSize = 15
-        c.Text = v.Name
-        c.BackgroundTransparency = 1
-      end
-     end
-  end
+function Toggler(whattotoggle)
+	if whattotoggle == "ESP" then
+		if ESPEnabled == false then
+			for i,v in pairs(game.Workspace.bots:GetChildren()) do
+				if boxes[v]:IsA("BillboardGui") then
+					boxes[v].Enabled = true
+				end
+			end
+			ESP.Text = "Nextbot ESP: Enabled"
+			ESPEnabled = true
+		else
+			for i,v in pairs(game.Workspace.bots:GetChildren()) do
+				if boxes[v]:IsA("BillboardGui") then
+					boxes[v].Enabled = false
+				end
+			end
+			ESP.Text = "Nextbot ESP: Disabled"
+			ESPEnabled = false
+		end
+	elseif whattotoggle == "FasterRespawn" then
+		if FasterRespawnEnabled == false then
+			FasterRe.Text = "Faster Respawn: Disabled"
+			FasterRespawnEnabled = true
+		else
+			FasterRe.Text = "Faster Respawn: Enabled"
+			FasterRespawnEnabled = false
+		end
+	elseif whattotoggle == "DoorSpam" then
+		if DoorSpamEnabled == false then
+			DoorSpam.Text = "Door Spam: Enabled"
+			DoorSpamEnabled = true
+		else
+			DoorSpam.Text = "Door Spam: Disabled"
+			DoorSpamEnabled = false
+		end
+	end
 end
 
+function NextbotESP(nextbot)
+	--if not nextbot:IsA("Model") then return end
+	warn("\nNico's Nextbot Killer : Adding Nextbot "..nextbot.Name.." to ESP System..")
+	local box = Instance.new("BillboardGui", nextbot)
+	local frame = Instance.new("Frame",box)
+	local frameedge = Instance.new("UICorner",frame)
+	local image = Instance.new("ImageLabel",frame)
+	local imageedge = Instance.new("UICorner",image)
+	
+	frame.Size = UDim2.new(3,0,3,0)
+	box.AlwaysOnTop = true
+	box.Adornee = nextbot
+	box.Size = UDim2.new(3,0,3,0)
+	box.Enabled = false
 
-function teleport1()
-  local daddy = game.Players.LocalPlayer.Character.HumanoidRootPart
-  local griddy = CFrame.new(Vector3.new(-70, 35, 362))
-  daddy.CFrame = griddy
+	frame.Size = UDim2.new(3,0,3,0)
+	frame.BorderSizePixel = 0
+	
+	frameedge.CornerRadius = UDim.new(1,0)
+	
+	image.BackgroundTransparency = 1
+	image.Size = UDim2.new(0.9, 0,0.9, 0)
+	image.Position = UDim2.new(0.05, 0,0.045, 0)
+	
+	imageedge.CornerRadius = UDim.new(1,0)
+
+	game:GetService("RunService").RenderStepped:Connect(function()
+		local s,e=pcall(function()
+			image.Image = nextbot.HumanoidRootPart.icon.ImageLabel.Image
+			if nextbot:FindFirstChild("chase").closetohuman.Value then
+				frame.BackgroundColor3 = Color3.fromRGB(0,255,0)
+			else
+				frame.BackgroundColor3 = Color3.fromRGB(255,0,0)
+			end
+		end)
+	end)
+	
+	boxes[nextbot] = box
+	warn("\nNico's Nextbot Killer : "..nextbot.Name.." Added successfully!")
 end
 
-function teleport2()
-  local minions = game.Players.LocalPlayer.Character.HumanoidRootPart
-  local riseofgru = CFrame.new(Vector3.new(-96, 19, -18))
-  minions.CFrame = riseofgru
+for i,v in pairs(game.Workspace.bots:GetChildren()) do
+	NextbotESP(v)
 end
+
+game.Workspace.bots.ChildAdded:Connect(function(child)
+	NextbotESP(child)
+end)
+
+game.Workspace.bots.ChildRemoved:Connect(function(child)
+	boxes[child] = nil
+end)
+
+character:WaitForChild("Humanoid").Died:Connect(function()
+	if FasterRespawnEnabled then
+		game.ReplicatedStorage.events.respawnchar:FireServer()
+	end
+end)
+
+game:GetService("RunService").RenderStepped:Connect(function()
+	if DoorSpamEnabled then
+		for i,v in pairs(game.Workspace.doors:GetChildren()) do
+			if v.Name == "interactable_door" then
+				game.ReplicatedStorage.events.door:FireServer(v)
+			end
+		end
+	end
+end)
+
+UIS.InputBegan:Connect(function(k)
+	if k.KeyCode == Enum.KeyCode.H then
+		Toggler("ESP")
+	elseif k.KeyCode == Enum.KeyCode.J then
+		Toggler("FasterRespawn")
+	elseif k.KeyCode == Enum.KeyCode.K then
+		Toggler("DoorSpam")
+	end
+end)
+
+warn("\nNico's Nextbot Killer : Created by Devamspion on V3rmillion.\n\nLoading Successful.\n\nPress H to activate Nextbot ESP.\nPress J to activate Faster Respawn.\nPress K to activate Door Spam.")
