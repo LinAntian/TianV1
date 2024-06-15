@@ -1,6 +1,6 @@
-local ESPEnabled = false
-local FasterRespawnEnabled = false
-local DoorSpamEnabled = false
+local ESPEnabled = true
+local FasterRespawnEnabled = ture
+local DoorSpamEnabled = true
 
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
