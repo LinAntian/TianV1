@@ -175,7 +175,7 @@ end
 
 function NextbotESP(nextbot)
 	--if not nextbot:IsA("Model") then return end
-	warn("\nNico's Nextbot Killer : Adding Nextbot "..nextbot.Name.." to ESP System..")
+	warn("\nTianV1-nn : Adding Nextbot "..nextbot.Name.." to ESP System..")
 	local box = Instance.new("BillboardGui", nextbot)
 	local frame = Instance.new("Frame",box)
 	local frameedge = Instance.new("UICorner",frame)
@@ -211,7 +211,7 @@ function NextbotESP(nextbot)
 	end)
 	
 	boxes[nextbot] = box
-	warn("\nNico's Nextbot Killer : "..nextbot.Name.." Added successfully!")
+	warn("\nTianV1-nn : "..nextbot.Name.." Added successfully!")
 end
 
 for i,v in pairs(game.Workspace.bots:GetChildren()) do
