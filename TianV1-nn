@@ -40,15 +40,15 @@ Intro.Image = "http://www.roblox.com/asset/?id=10529044500"
 
 Killa.Name = "Killa"
 Killa.Parent = Intro
-Killa.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+Killa.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Killa.BackgroundTransparency = 1.000
 Killa.BorderSizePixel = 0
 Killa.Position = UDim2.new(-0.153256699, 0, 1.21072805, 0)
 Killa.Size = UDim2.new(1.30651343, 0, 0.42145595, 0)
 Killa.Visible = false
 Killa.Font = Enum.Font.Creepster
-Killa.Text = "TianV1-nn"
-Killa.TextColor3 = Color3.fromRGB(255, 0, 4)
+Killa.Text = "已开启"
+Killa.TextColor3 = Color3.fromRGB(255, 255, 255)
 Killa.TextScaled = true
 Killa.TextSize = 14.000
 Killa.TextWrapped = true
@@ -58,14 +58,14 @@ UICorner.Parent = Intro
 
 Name.Name = "Name"
 Name.Parent = Intro
-Name.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Name.BackgroundTransparency = 1.000
 Name.BorderSizePixel = 0
 Name.Position = UDim2.new(-0.153256699, 0, 1, 0)
 Name.Size = UDim2.new(1.30651343, 0, 0.275862068, 0)
 Name.Font = Enum.Font.SourceSansBold
-Name.Text = "已开启"
-Name.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name.Text = "TianV1-nn"
+Name.TextColor3 = Color3.fromRGB(255, 0, 4)
 Name.TextScaled = true
 Name.TextSize = 14.000
 Name.TextWrapped = true
