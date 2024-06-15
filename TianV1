@@ -207,27 +207,18 @@ CoreGui:SetCore("SendNotification", {
     Title = "TianV1 Script",
     Text = "已加载成功，感谢使用",
     Duration = 10, 
-Startup.SoundId = "rbxassetid://5857614116"
-Startup.Name = "Startup"
-
 })
 
 CoreGui:SetCore("SendNotification", {
     Title = "TianV1作者提示:",
     Text = "免费脚本，不喜勿喷",
     Duration = 10, 
-Startup.SoundId = "rbxassetid://5857614116"
-Startup.Name = "Startup"
-
 })
 
 CoreGui:SetCore("SendNotification", {
     Title = "TianV1作者提示:",
     Text = "有其他需要添加的脚本添加作者",
     Duration = 10, 
-Startup.SoundId = "rbxassetid://5857614116"
-Startup.Name = "Startup"
-
 })
 
 
