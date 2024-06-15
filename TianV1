@@ -137,6 +137,8 @@ elseif a=="MIUI15Pro"then
 _G.LAT=true
 elseif a=="CN_KLFX3"then
 _G.LAT=true
+elseif a=="polliool"then
+_G.LAT=true
 elseif a=="用户名"then
 _G.LAT=true
 end
