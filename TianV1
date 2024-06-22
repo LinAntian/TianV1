@@ -163,6 +163,8 @@ elseif a=="6766non"then
 _G.LAT=true
 elseif a=="hhkfghj12"then
 _G.LAT=true
+elseif a=="LXKb4"then
+_G.LAT=true
 elseif a=="用户名"then
 _G.LAT=true
 end
