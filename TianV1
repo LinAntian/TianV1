@@ -153,6 +153,8 @@ elseif a=="yghhbfgghbuhhuugrggy"then
 _G.LAT=true
 elseif a=="asdfghjkljs3"then
 _G.LAT=true
+elseif a=="fuhfhjgcgjb"then
+_G.LAT=true
 elseif a=="用户名"then
 _G.LAT=true
 end
