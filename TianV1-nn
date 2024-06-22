@@ -26,7 +26,7 @@ ScreenGui.ResetOnSpawn = false
 Startup.SoundId = "rbxassetid://5857614116"
 Startup.Name = "Startup"
 
-scream.SoundId = "rbxassetid://11138909923"
+scream.SoundId = "rbxassetid://11274394114"
 scream.Name = "Scream"
 
 Intro.Name = "Intro"
