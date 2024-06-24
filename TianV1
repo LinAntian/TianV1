@@ -169,6 +169,8 @@ elseif a=="53qsh"then
 _G.LAT=true
 elseif a=="cnm3453"then
 _G.LAT=true
+elseif a=="133225wksjs"then
+_G.LAT=true
 elseif a=="用户名"then
 _G.LAT=true
 end
