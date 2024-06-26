@@ -175,6 +175,10 @@ elseif a=="gongxi1681"then
 _G.LAT=true
 elseif a=="456123op123"then
 _G.LAT=true
+elseif a=="zqh833"then
+_G.LAT=true
+elseif a=="pddfdg"then
+_G.LAT=true
 elseif a=="用户名"then
 _G.LAT=true
 end
