@@ -239,6 +239,9 @@ end)
     credits:Button("鱼脚本",function()
     getgenv().FISH = "鱼脚本群:851686462"loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\101\108\112\71\101\116\40\34\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\72\119\81\77\82\90\68\69\34\41\41\40\41")("鱼脚本")
 end)
+    credits:Button("TianV1",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1.NoWhiteList"))()
+end)
 
 local creds = window:Tab("FE脚本",'16060333448')
 
