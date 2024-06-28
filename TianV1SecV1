@@ -32,7 +32,7 @@ local bin = creds:section("玩家信息",true)
     local bin = creds:section("关于",true)
     bin:Label("主群:495186854")
     bin:Label("2群:915050457")
-    bin:Label("作者LAT")
+    bin:Label("作者:LAT")
     
 local credits = creds:section("关闭",true)
 
