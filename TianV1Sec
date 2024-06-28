@@ -3,7 +3,7 @@ local CoreGui = game:GetService("StarterGui") -- Variable of StarterGui
 CoreGui:SetCore("SendNotification", {
     -- Customizable
     Title = "TianV1Sec",
-    Text = "玩家:"..game.Players.LocalPlayer.Name.."，欢迎您使用TianV1Sec",
+    Text = "尊贵的"..game.Players.LocalPlayer.Name.."，你好！欢迎您使用TianV1Sec",
     Duration = 10, --时间
 })
 
