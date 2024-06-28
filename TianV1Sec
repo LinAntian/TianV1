@@ -369,6 +369,7 @@ local credits = creds:section("TianV1Sec",true)
 end)
 
 local creds = window:Tab("忍者传奇",'16060333448')
+
 local credits = creds:section("TianV1Sec",true)
     credits:Button("忍者传奇",function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Zyb150933/zyb/main/123'))()
