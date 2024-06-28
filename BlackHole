@@ -3,73 +3,89 @@ local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
 local Folder = Instance.new("Folder", game:GetService("Workspace"))
 local Part = Instance.new("Part", Folder)
 local Attachment1 = Instance.new("Attachment", Part)
+
 Part.Anchored = true
 Part.CanCollide = false
 Part.Transparency = 1
+
 local Updated = Mouse.Hit + Vector3.new(0, 5, 0)
+
 local NetworkAccess = coroutine.create(function()
     settings().Physics.AllowSleep = false
     while game:GetService("RunService").RenderStepped:Wait() do
-        for _, Players in next, game:GetService("Players"):GetPlayers() do
-            if Players ~= game:GetService("Players").LocalPlayer then
-                Players.MaximumSimulationRadius = 0 
-                sethiddenproperty(Players, "SimulationRadius", 0) 
-            end 
-        end
-        game:GetService("Players").LocalPlayer.MaximumSimulationRadius = math.pow(math.huge, math.huge)
-        setsimulationradius(math.huge) 
-    end 
-end) 
-coroutine.resume(NetworkAccess)
-
-local function EnhanceAndInvinciblePart(part)
-    if part:IsA("Part") and part.Anchored == false and part.Parent:FindFirstChild("Humanoid") == nil and part.Parent:FindFirstChild("Head") == nil and part.Name ~= "Handle" then
-        Mouse.TargetFilter = part
-        for _, x in next, part:GetChildren() do
-            if x:IsA("BodyAngularVelocity") or x:IsA("BodyForce") or x:IsA("BodyGyro") or x:IsA("BodyPosition") or x:IsA("BodyThrust") or x:IsA("BodyVelocity") or x:IsA("RocketPropulsion") then
-                x:Destroy()
+        for _, Player in ipairs(game:GetService("Players"):GetPlayers()) do
+            if Player ~= game:GetService("Players").LocalPlayer then
+                Player.MaximumSimulationRadius = 0
+                pcall(function()
+                    sethiddenproperty(Player, "SimulationRadius", 0)
+                end)
             end
         end
-        if part:FindFirstChild("Attachment") then
-            part:FindFirstChild("Attachment"):Destroy()
+        pcall(function()
+            game:GetService("Players").LocalPlayer.MaximumSimulationRadius = math.huge
+            setsimulationradius(math.huge)
+        end)
+    end
+end)
+
+coroutine.resume(NetworkAccess)
+
+local function ForcePart(v)
+    if v:IsA("Part") and not v.Anchored and not v.Parent:FindFirstChild("Humanoid") and not v.Parent:FindFirstChild("Head") and v.Name ~= "Handle" then
+        Mouse.TargetFilter = v
+        for _, child in ipairs(v:GetChildren()) do
+            if child:IsA("BasePart") then
+                child:Destroy()
+            end
         end
-        if part:FindFirstChild("AlignPosition") then
-            part:FindFirstChild("AlignPosition"):Destroy()
+        if v:FindFirstChild("Attachment") then
+            v:FindFirstChild("Attachment"):Destroy()
         end
-        if part:FindFirstChild("Torque") then
-            part:FindFirstChild("Torque"):Destroy()
+        if v:FindFirstChild("AlignPosition") then
+            v:FindFirstChild("AlignPosition"):Destroy()
         end
-        part.CanCollide = false
-        local Torque = Instance.new("Torque", part)
+
+        v.CanCollide = false
+
+        local Torque = Instance.new("Torque", v)
         Torque.Torque = Vector3.new(100000, 100000, 100000)
-        local AlignPosition = Instance.new("AlignPosition", part)
-        local Attachment2 = Instance.new("Attachment", part)
+        
+        local AlignPosition = Instance.new("AlignPosition", v)
+        local Attachment2 = Instance.new("Attachment", v)
         Torque.Attachment0 = Attachment2
-        AlignPosition.MaxForce = 9999999999999999
+        
+        AlignPosition.MaxForce = math.huge
         AlignPosition.MaxVelocity = math.huge
         AlignPosition.Responsiveness = 200
-        AlignPosition.Attachment0 = Attachment2 
+        AlignPosition.Attachment0 = Attachment2
         AlignPosition.Attachment1 = Attachment1
     end
 end
 
-for _, part in next, game:GetService("Workspace"):GetDescendants() do
-    EnhanceAndInvinciblePart(part)
+local function HandlePartAdded(v)
+    if not v:IsA("BasePart") then
+        return
+    end
+
+    ForcePart(v)
 end
 
-game:GetService("Workspace").DescendantAdded:Connect(function(part)
-    EnhanceAndInvinciblePart(part)
-end)
--- 监听按键事件
-UserInputService.InputBegan:Connect(function(input, isProcessed)
-    if input.KeyCode == Enum.KeyCode.E and not isProcessed then
-       Updated = Mouse.Hit + Vector3.new(0, 5, 0)
+for _, v in ipairs(game:GetService("Workspace"):GetDescendants()) do
+    HandlePartAdded(v)
+end
+
+game:GetService("Workspace").DescendantAdded:Connect(HandlePartAdded)
+
+UserInputService.InputBegan:Connect(function(Key, Chat)
+    if Key.KeyCode == Enum.KeyCode.E and not Chat then
+        Updated = Mouse.Hit + Vector3.new(0, 5, 0)
     end
 end)
 
--- 使用物理引擎移动所有物体
 spawn(function()
     while game:GetService("RunService").RenderStepped:Wait() do
-        Attachment1.WorldCFrame = Updated
+        pcall(function()
+            Attachment1.WorldCFrame = Updated
+        end)
     end
 end)
