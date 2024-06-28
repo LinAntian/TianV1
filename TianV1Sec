@@ -129,9 +129,6 @@ end)
     credits = creds:section("TianV1Sec-追踪玩家",true)
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1.Player%20Control'),true))()
 end)
-
-local creds = window:Tab("通用脚本",'16060333448')
-
 local credits = creds:section("通用脚本",true)
     credits:Button("工具包",function()
     loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
