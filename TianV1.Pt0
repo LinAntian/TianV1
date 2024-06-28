@@ -45,7 +45,7 @@ end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 local Window = OrionLib:MakeWindow({Name = "TianV1 Script", HidePremium = false, SaveConfig = true,IntroText = "TianV1 Script", ConfigFolder = "TianV1.Pt0"})
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "欢迎使用TianV1 Script"; Text ="TianV1"; Duration = 4; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "欢迎使用TianV1.Pt0"; Text ="TianV1.Pt0"; Duration = 4; })
 
 local about = Window:MakeTab({
     Name = "TianV1",
@@ -54,7 +54,7 @@ local about = Window:MakeTab({
 })
 
 CoreGui:SetCore("SendNotification", {
-    Title = "TianV1 Script",
+    Title = "TianV1.Pt0",
     Text = "已加载成功，感谢使用",
     Duration = 10, 
 })
