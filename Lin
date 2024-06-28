@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ShenJiaoBen/ShenJiaoBen/main/OrionLib.lua"))()
 local Window = OrionLib:MakeWindow({Name = "林脚本", HidePremium = false, SaveConfig = true,IntroText = "林脚本", ConfigFolder = "林脚本"})
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "林脚本"; Text ="林天帝nb"; Duration = 4; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "林脚本"; Text ="林天帝sb"; Duration = 4; })
 
 local about = Window:MakeTab({
     Name = "林制作",
