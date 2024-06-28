@@ -1,6 +1,6 @@
 local Me = game.Players.LocalPlayer
 bin = Instance.new("HopperBin")
-bin.Name = "Fap (Q and E)"
+bin.Name = "TianV1.JB"
 bin.Parent = Me.Backpack
  
 local SIZE = 1
