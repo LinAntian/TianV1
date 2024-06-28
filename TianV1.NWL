@@ -305,6 +305,19 @@ Tab:AddButton({
 
 Tab:AddButton({
 
+	Name = "TianV1.JB",
+
+	Callback = function()
+
+     loadstring(game:HttpGet(('https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1.JB')))()
+
+  	end    
+
+})
+
+
+Tab:AddButton({
+
 	Name = "替身",
 
 	Callback = function()
