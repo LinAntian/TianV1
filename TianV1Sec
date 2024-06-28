@@ -134,6 +134,8 @@ end)
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1.Player%20Control'),true))()
 end)
 
+local creds = window:Tab("通用脚本",'16060333448')
+
 local credits = creds:section("通用脚本",true)
     credits:Button("工具包",function()
     loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
@@ -365,13 +367,12 @@ end)
 local creds = window:Tab("极速传奇",'16060333448')
 
 local credits = creds:section("TianV1Sec",true)
-
     credits:Button("剑客脚本",function()
     jianke_V4 = "作者_初夏"jianke__V4 = "作者QQ1412152634"jianke___V4 = "剑客QQ群347724155"loadstring(game:HttpGet(('https://shz.al/~JianKeV4')))()
 end)
 
 local creds = window:Tab("忍者传奇",'16060333448')
-
+local credits = creds:section("TianV1Sec",true)
     credits:Button("忍者传奇",function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Zyb150933/zyb/main/123'))()
 end)
@@ -428,6 +429,7 @@ end)
 
 local creds = window:Tab("杀手与警长",'16060333448')
 
+local credits = creds:section("TianV1Sec",true)
     credits:Button("剑客脚本（通用）",function()
     jianke_V4 = "作者_初夏"jianke__V4 = "作者QQ1412152634"jianke___V4 = "剑客QQ群347724155"loadstring(game:HttpGet(('https://shz.al/~JianKeV4')))()
 end)
