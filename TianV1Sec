@@ -35,7 +35,7 @@ local bin = creds:section("玩家信息",true)
     bin:Label("TianV1Sec作者:LAT")
     bin:Label("感谢各位的支持❤")
 
-local credits = creds:section("关闭",true)
+local credits = creds:section("关闭TianV1Sec",true)
 
 credits:Toggle("脚本框架变小一点", "", false, function(state)
         if state then
@@ -50,7 +50,6 @@ credits:Toggle("脚本框架变小一点", "", false, function(state)
 local creds = window:Tab("复制群",'16060333448')
 
 local credits = creds:section("TianV1Sec",true)
-
     credits:Button("点我复制主群",function()
     setclipboard("495186854")
 end)
@@ -63,15 +62,12 @@ end)
 
 local creds = window:Tab("玩家",'16060333448')
 
-local credits = creds:section("通用脚本",true)
+local credits = creds:section("玩家",true)
     credits:Button("玩家加入游戏提示",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
 end)
     credits:Button("穿墙",function()
     loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))()
-end)
-    credits:Button("显示人物体积",function()
-    loadstring(game:HttpGet("https://shz.al/~KSJXBC62"))()
 end)
     credits:Button("TianV1.Fly",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1Fly"))()
