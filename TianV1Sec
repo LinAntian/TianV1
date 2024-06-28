@@ -482,7 +482,7 @@ local credits = creds:section("TianV1Sec",true)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1-nn"))()
 end)
 
-local creds = window:Tab("Dahoob",'16060333448')
+local creds = window:Tab("Dahood",'16060333448')
 
 local credits = creds:section("TianV1Sec",true)
     credits:Button("Dahood自瞄",function()
