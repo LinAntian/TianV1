@@ -36,6 +36,7 @@ local bin = creds:section("玩家信息",true)
     bin:Label("不是其他UI搞不起,而是透明UI更有性价比（doge")
     bin:Label("不喜勿喷❤")
     bin:Label("推荐子脚本TianV1")
+    bin:Label("😘更新通知:更新唐县脚本")
     
 local credits = creds:section("关闭",true)
 
@@ -509,4 +510,11 @@ end)
 end)
     credits:Button("Neoncat刀刃球",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Neoncat765/Neon.C-Hub-X/main/UnknownVersion"))()
+end)
+
+local creds = window:Tab("河北唐县",'18255612747')
+
+local credits = creds:section("脚本",true)
+    credits:Button("河北唐县autofam",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Sw1ndlerScripts/RobloxScripts/main/Tang%20Country.lua"))()
 end)
