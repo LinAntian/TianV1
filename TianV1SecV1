@@ -1,7 +1,8 @@
 local CoreGui = game:GetService("StarterGui")
+
 CoreGui:SetCore("SendNotification", {
     Title = "TianV1Sec黑名单系统",
-    Text = "正在检验中...",
+    Text = "正在检验...",
     Duration = 5,
 })
 
@@ -104,10 +105,19 @@ CoreGui:SetCore("SendNotification", {
 })
    wait(0.3)
 
-       game.Players.LocalPlayer:Kick("你是黑名单用户，不能使用TianV1Sec")
-
+      while true do
+      for i=1,999999^999999 do
+      print("nmsl",i)
+     end 
+      end
     else 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1Sec"))()
+local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "检测结果",
+    Text = "检测到您("..game.Players.LocalPlayer.Name..")没有黑名单,正在打开TianV1Sec",
+    Duration = 5,
+})
+wait(1)
 end
 
 CoreGui:SetCore("SendNotification", {
