@@ -1,5 +1,4 @@
 local CoreGui = game:GetService("StarterGui")
-
 CoreGui:SetCore("SendNotification", {
     Title = "TianV1Sec黑名单系统",
     Text = "正在检验...",
