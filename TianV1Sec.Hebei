@@ -20,7 +20,7 @@ function autoFarm()
 	end
 end
 
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1SecUI-1"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TMUI"))()
 local venyx = library.new("TianV1Sec - TangCountry", TianV1Sec - TangContry)
 
 local themes = {
