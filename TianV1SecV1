@@ -1,4 +1,114 @@
 local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "TianV1Sec黑名单系统",
+    Text = "正在检验中...",
+    Duration = 5,
+})
+
+wait(3)
+
+LATa = game.Players.LocalPlayer.Name
+LAT = {
+    "这里放黑名单用户的用户名，后面也是一样",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+}
+if table.find(LAT,LATa) then
+   local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "检测结果",
+    Text = "检测到您("..game.Players.LocalPlayer.Name..")是黑名单用户，无法使用TianV1Sec",
+    Duration = 5,
+})
+   wait(0.3)
+
+       game.Players.LocalPlayer:Kick("你是黑名单用户，不能使用TianV1Sec")
+
+    else 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1Sec"))()
+end
 
 CoreGui:SetCore("SendNotification", {
     -- Customizable
