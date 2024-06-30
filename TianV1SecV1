@@ -1,6 +1,117 @@
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
+    Title = "正在检查",
+    Text = "请等待...",
+    Duration = 5,
+})
+
+wait(3)
+
+long = game.Players.LocalPlayer.Name
+long = {
+    "zxl200826yyds",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+}
+if long then
+   local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "检测结果",
+    Text = "检测到您("..game.Players.LocalPlayer.Name..")是黑名单用户，无法使用TianV1Sec",
+    Duration = 5,
+})
+   wait(0.3)
+
+       game.Players.LocalPlayer:Kick("你已被TianV1Sec拉入黑名单!")
+
+    else 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1Sec"))()
+end
+
+CoreGui:SetCore("SendNotification", {
     -- Customizable
     Title = "TianV1Sec",
     Text = "尊贵的"..game.Players.LocalPlayer.Name.."，欢迎您使用TianV1Sec",
@@ -40,7 +151,7 @@ local bin = creds:section("玩家信息",true)
     
 local credits = creds:section("关闭",true)
 
-credits:Toggle("脚本框架变小一点", "", true, function(state)
+credits:Toggle("脚本框架变小一点", "", false, function(state)
         if state then
         game:GetService("CoreGui")["frosty"].Main.Style = "DropShadow"
         else
