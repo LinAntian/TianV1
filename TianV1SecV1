@@ -19,7 +19,7 @@ local services = setmetatable({}, {
     return game.GetService(game, k)
   end
 })
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1SecUI-1"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TMUI"))()
 local window = library:new("TianV1Sec")
 
 local creds = window:Tab("TianV1Sec",'16060333448')
