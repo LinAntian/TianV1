@@ -8,8 +8,8 @@ CoreGui:SetCore("SendNotification", {
 
 wait(3)
 
-long = game.Players.LocalPlayer.Name
-long = {
+LAT = game.Players.LocalPlayer.Name
+LAT = {
     "",
     "",
     "",
@@ -96,7 +96,7 @@ long = {
     "",
     "",
 }
-if long then
+if LAT then
    local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "检测结果",
