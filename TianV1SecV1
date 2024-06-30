@@ -1,4 +1,4 @@
-local CoreGui = game:GetService("StarterGui") -- Variable of StarterGui
+local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
     -- Customizable
