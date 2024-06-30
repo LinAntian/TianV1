@@ -113,7 +113,7 @@ CoreGui:SetCore("SendNotification", {
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "检测结果",
-    Text = "检测到尊贵的"..game.Players.LocalPlayer.Name.."您没有黑名单,正在打开TianV1Sec...",
+    Text = "尊贵的"..game.Players.LocalPlayer.Name.."您没有黑名单,正在打开TianV1Sec...",
     Duration = 5,
 })
 wait(3)
