@@ -5,6 +5,9 @@ local Window = OrionLib:MakeWindow({Name = "TianV1Sec - 幸运方块"})
 local P = game:GetService'Players'
 local HRP = P.LocalPlayer.Character.HumanoidRootPart
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
+Heartbeat:Connect(HeartbeatUpdate)
+local Window = OrionLib:MakeWindow({Name = "TianV1 Script", HidePremium = false, SaveConfig = true,IntroText = "TianV1 Script", ConfigFolder = "TianV1 Script"})
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "欢迎使用TianV1 Script"; Text ="TianV1"; Duration = 4; })
 local Tab = Window:MakeTab({
 	Name = "幸运方块",
 	Icon = "rbxassetid://4483362458",
