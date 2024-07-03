@@ -155,7 +155,7 @@ local bin = creds:section("玩家信息",true)
     bin:Label("不是其他UI搞不起,而是透明UI更有性价比😁")
     bin:Label("不喜勿喷❤")
     bin:Label("推荐子脚本TianV1")
-    bin:Label("😘更新通知:无")
+    bin:Label("😘更新通知:新增幸运方块")
     
 local credits = creds:section("关闭",true)
 
