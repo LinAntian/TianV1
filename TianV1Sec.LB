@@ -1,34 +1,34 @@
 local Name = game.Players.LocalPlayer.Name
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1.UI')))()
 local Spawn = game.Players.LocalPlayer.SpawnCFrame
-local Window = OrionLib:MakeWindow({Name = "❓ LUCKY BLOCKS Battlegrounds"})
+local Window = OrionLib:MakeWindow({Name = "TianV1Sec - 幸运方块"})
 local P = game:GetService'Players'
 local HRP = P.LocalPlayer.Character.HumanoidRootPart
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Tab = Window:MakeTab({
-	Name = "Main",
+	Name = "幸运方块",
 	Icon = "rbxassetid://4483362458",
 	PremiumOnly = false
 })
 local Tab2 = Window:MakeTab({
-	Name = "Misc",
+	Name = "修改数值",
 	Icon = "rbxassetid://4515645493",
 	PremiumOnly = false
 })
 local Tab3 = Window:MakeTab({
-	Name = "Keybinds",
+	Name = "PC端引导页",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 local Tab4 = Window:MakeTab({
-	Name = "Credits",
+	Name = "制作者",
 	Icon = "rbxassetid://4503342956",
 	PremiumOnly = false
 })
 
 ---//SPAWNER
 Tab:AddDropdown({
-	Name = "Spawn 1 Block",
+	Name = "生成1个幸运方块",
 	Default = "Select Block",
 	Options = {"Select Block", "Lucky Block", "Super Block", "Diamond Block", "Rainbow Block","Galaxy Block"},
 	Callback = function(Value)
@@ -49,7 +49,7 @@ Tab:AddDropdown({
 		end
 	end})
 Tab:AddDropdown({
-	Name = "Spawn 5 Blocks",
+	Name = "生成5个幸运方块",
 	Default = "Select Block",
 	Options = {"Select Block", "Lucky Block", "Super Block", "Diamond Block", "Rainbow Block","Galaxy Block"},
 	Callback = function(Value)
@@ -81,7 +81,7 @@ Tab:AddDropdown({
 	end})
 	
 Tab:AddDropdown({
-	Name = "Spawn 10 Blocks",
+	Name = "生成10个幸运方块",
 	Default = "Select Block",
 	Options = {"Select Block", "Lucky Block", "Super Block", "Diamond Block", "Rainbow Block","Galaxy Block"},
 	Callback = function(Value)
@@ -113,7 +113,7 @@ Tab:AddDropdown({
 	end})
 
 Tab:AddDropdown({
-	Name = "Spawn 20 Blocks",
+	Name = "生成20个幸运方块",
 	Default = "Select Block",
 	Options = {"Select Block", "Lucky Block", "Super Block", "Diamond Block", "Rainbow Block","Galaxy Block"},
 	Callback = function(Value)
@@ -145,7 +145,7 @@ Tab:AddDropdown({
 	end})
 	
 Tab:AddButton({
-	Name = "Kill All (Requires Hex Spitter)",
+	Name = "HexSpitter - 杀死所有人",
 	Callback = function()
 		local HexSpitter = P.LocalPlayer.Character.HexSpitter
 		local ServerControl = HexSpitter.Remotes.ServerControl
@@ -303,7 +303,7 @@ Tab3:AddBind({
 
 ---//CREDITS 
 Tab4:AddButton({
-	Name = "Copy link to discord",
+	Name = "加入我们的DC",
 	Callback = function()
       	setclipboard('https://discord.com/invite/jEaY4etBTY')
 	end
