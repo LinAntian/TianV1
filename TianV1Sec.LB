@@ -303,7 +303,7 @@ Tab3:AddBind({
 
 ---//CREDITS 
 Tab4:AddButton({
-	Name = "加入我们的DC",
+	Name = "加入我们的DC群组",
 	Callback = function()
       	setclipboard('https://discord.com/invite/jEaY4etBTY')
 	end
@@ -312,13 +312,13 @@ Tab4:AddLabel("Made by LATstudio")
 
 OrionLib:MakeNotification({
 	Name = "GUI",
-	Content = "Successfully loaded GUI",
+	Content = "GUI已完成加载",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
 OrionLib:MakeNotification({
 	Name = "GUI",
-	Content = "Copied link to the discord server!",
+	Content = "已复制",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
