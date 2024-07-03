@@ -29,7 +29,7 @@ local Tab4 = Window:MakeTab({
 ---//SPAWNER
 Tab:AddDropdown({
 	Name = "生成1个幸运方块",
-	Default = "Select Block",
+	Default = "查看生成的幸运方块类型",
 	Options = {"Select Block", "Lucky Block", "Super Block", "Diamond Block", "Rainbow Block","Galaxy Block"},
 	Callback = function(Value)
 		if Value == 'Lucky Block' then
@@ -50,7 +50,7 @@ Tab:AddDropdown({
 	end})
 Tab:AddDropdown({
 	Name = "生成5个幸运方块",
-	Default = "Select Block",
+	Default = "查看生成的幸运方块类型",
 	Options = {"Select Block", "Lucky Block", "Super Block", "Diamond Block", "Rainbow Block","Galaxy Block"},
 	Callback = function(Value)
 		if Value == 'Lucky Block' then
@@ -82,7 +82,7 @@ Tab:AddDropdown({
 	
 Tab:AddDropdown({
 	Name = "生成10个幸运方块",
-	Default = "Select Block",
+	Default = "查看生成的幸运方块类型",
 	Options = {"Select Block", "Lucky Block", "Super Block", "Diamond Block", "Rainbow Block","Galaxy Block"},
 	Callback = function(Value)
 		if Value == 'Lucky Block' then
@@ -114,7 +114,7 @@ Tab:AddDropdown({
 
 Tab:AddDropdown({
 	Name = "生成20个幸运方块",
-	Default = "Select Block",
+	Default = "查看生成的幸运方块类型",
 	Options = {"Select Block", "Lucky Block", "Super Block", "Diamond Block", "Rainbow Block","Galaxy Block"},
 	Callback = function(Value)
 		if Value == 'Lucky Block' then
