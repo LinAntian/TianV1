@@ -303,9 +303,9 @@ Tab3:AddBind({
 
 ---//CREDITS 
 Tab4:AddButton({
-	Name = "加入我们的DC群组",
+	Name = "加入我们的QQ群",
 	Callback = function()
-      	setclipboard('https://discord.com/invite/jEaY4etBTY')
+      	setclipboard('495186854')
 	end
 })
 Tab4:AddLabel("Made by LATstudio")
@@ -318,9 +318,9 @@ OrionLib:MakeNotification({
 })
 OrionLib:MakeNotification({
 	Name = "GUI",
-	Content = "已复制",
+	Content = "已复制QQ群",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
-setclipboard('https://discord.com/invite/jEaY4etBTY')
+setclipboard('495186854')
 OrionLib:Init()
