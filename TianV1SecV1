@@ -618,3 +618,10 @@ end)
     credits:Button("Neoncat刀刃球",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Neoncat765/Neon.C-Hub-X/main/UnknownVersion"))()
 end)
+
+local creds = window:Tab("幸运方块",'16060333448')
+
+local credits = creds:section("TianV1Sec",true)
+    credits:Button("TianV1Sec",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1Sec.LB"))()
+end)
