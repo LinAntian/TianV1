@@ -1,20 +1,42 @@
-local Name = game.Players.LocalPlayer.Name
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1.UI')))()
-local Spawn = game.Players.LocalPlayer.SpawnCFrame
-local Window = OrionLib:MakeWindow({Name = "TianV1Sec - 河北唐县"})
-local P = game:GetService'Players'
-local HRP = P.LocalPlayer.Character.HumanoidRootPart
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RainbowLib =
+loadstring(game:HelpGet("https://raw.githubusercontent.com/YJY2022hh666/yjy/main/rainbow.ui.main.lua?token=GHSAT0AAAAAACESL5MYP6BL6PJ45CVEZRQEZFYXXUA",true))()
+local window = library:new("TianV1Sec - 河北唐县")
 
-local Tab = Window:MakeTab({
-	Name = "河北唐县",
-	Icon = "rbxassetid://4483362458",
-	PremiumOnly = false
-})
+local creds = window:Tab("信息",'6035145364')
 
-Tab2:AddButton({
-	Name = "河北唐县",
-	Callback = function()
-    local virtualUser = game:GetService('VirtualUser') virtualUser:CaptureController() function teleportTo(CFrame) game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame end _G.autoFarm = false function autoFarm() while _G.autoFarm do fireclickdetector(game:GetService("Workspace").DeliverySys.Misc["Package Pile"].ClickDetector) task.wait(2.2) for _,point in pairs(game:GetService("Workspace").DeliverySys.DeliveryPoints:GetChildren()) do if point.Locate.Locate.Enabled then teleportTo(point.CFrame) end end task.wait(0) end end
+local bin = creds:section("信息",true)
+
+    bin:Label("你的用户名："..game.Players.LocalPlayer.Character.Humanoid.Name)
+    bin:Label("你的注入器:"..identifyexecutor())
+
+local credits = creds:section("UI设置",true)
+
+    credits:Button("摧毁UI",function()
+        game:GetService("CoreGui")["frosty"]:Destroy()
+    end)
+
+    credits:Toggle("彩虹UI", "", false, function(state)
+        if state then
+        game:GetService("CoreGui")["frosty"].Main.Style = "DropShadow"
+        else
+            game:GetService("CoreGui")["frosty"].Main.Style = "Custom"
+        end
+    end)
+
+credits:Toggle("玩家加入游戏提示", "", false, function(state)
+        if state then
+    
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
+    end)
+
+local creds = window:Tab("河北唐县",'6035145364')
+
+local bin = creds:section("河北唐县",true)
+
+local credits = creds:section("河北唐县",true)
+
+    credits:Button("自动刷钱",function()
+    
+	local virtualUser = game:GetService('VirtualUser') virtualUser:CaptureController() function teleportTo(CFrame) game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame end _G.autoFarm = false function autoFarm() while _G.autoFarm do fireclickdetector(game:GetService("Workspace").DeliverySys.Misc["Package Pile"].ClickDetector) task.wait(2.2) for _,point in pairs(game:GetService("Workspace").DeliverySys.DeliveryPoints:GetChildren()) do if point.Locate.Locate.Enabled then teleportTo(point.CFrame) end end task.wait(0) end end
 end)
-})
+    end)
