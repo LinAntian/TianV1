@@ -1,0 +1,75 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    -- Customizable
+    Title = "TianV1Sec",
+    Text = "尊贵的"..game.Players.LocalPlayer.Name.."，欢迎您使用TianV1Sec",
+    Duration = 3, --时间
+})
+
+   
+
+   repeat task.wait() until game:IsLoaded()
+local library = {}
+local ToggleUI = false
+library.currentTab = nil
+library.flags = {}
+
+local services = setmetatable({}, {
+  __index = function(t, k)
+    return game.GetService(game, k)
+  end
+})
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1SecUI-1"))()
+local window = library:new("TianV1Sec")
+
+local creds = window:Tab("TianV1Sec",'16060333448')
+
+local bin = creds:section("玩家信息",true)
+
+    bin:Label("你的用户名:"..game.Players.LocalPlayer.Character.Name)
+    bin:Label("你的注入器:"..identifyexecutor())
+    
+    local bin = creds:section("关于",true)
+    bin:Label("此脚本为TianV1Sec幸运方块专属脚本")
+    
+local credits = creds:section("关闭",true)
+
+credits:Toggle("脚本框架变小一点", "", false, function(state)
+        if state then
+        game:GetService("CoreGui")["frosty"].Main.Style = "DropShadow"
+        else
+            game:GetService("CoreGui")["frosty"].Main.Style = "Custom"
+        end
+    end)
+    credits:Button("关闭脚本",function()
+        game:GetService("CoreGui")["frosty"]:Destroy()
+    end)
+local creds = window:Tab("复制群",'16060333448')
+
+local credits = creds:section("TianV1Sec",true)
+    credits:Button("点我复制主群",function()
+    setclipboard("495186854")
+end)
+    credits:Button("点我复制2群",function()
+    setclipboard("915050457")
+end)
+    credits:Button("点我复制作者QQ",function()
+    setclipboard("3422265683")
+end)
+
+local creds = window:Tab("幸运方块",'16060333448')
+
+local credits = creds:section("TianV1Sec",true)
+    credits:Button("TianV1.Fly",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1Fly"))()
+end)
+    credits:Button("反挂机",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/9fFu43FF"))()
+end)
+    credits:Button("TianV1.吸人",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1-XiRen"))()
+end)
+    credits:Button("TianV1Sec.幸运方块",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1Sec.LB"))()
+end)
