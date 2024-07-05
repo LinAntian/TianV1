@@ -64,3 +64,11 @@ end)
     credits:Button("传送到指定地点",function()
   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-737.6729125976562, 343.0006408691406, -621.72900390625)
 end)
+    credits:Button("生成20个彩虹方块",function()
+			for _ = 1,20 do
+				ReplicatedStorage.SpawnRainbowBlock:FireServer()
+end)
+    credits:Button("生成20个星系方块",function()
+			for _ = 1,20 do
+				ReplicatedStorage.SpawnGalaxyBlock:FireServer()
+end)
