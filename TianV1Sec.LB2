@@ -35,7 +35,7 @@ local bin = creds:section("玩家信息",true)
     
 local credits = creds:section("关闭",true)
 
-credits:Toggle("脚本框架变小一点", "", true, function(state)
+credits:Toggle("脚本框架变大一点", "", true, function(state)
         if state then
         game:GetService("CoreGui")["frosty"].Main.Style = "DropShadow"
         else
