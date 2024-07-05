@@ -152,14 +152,13 @@ local bin = creds:section("玩家信息",true)
     bin:Label("主群:495186854")
     bin:Label("2群:915050457")
     bin:Label("作者:LAT QQ:3422265683☺")
-    bin:Label("不是其他UI搞不起,而是透明UI更有性价比😁")
     bin:Label("不喜勿喷❤")
     bin:Label("推荐子脚本TianV1")
     bin:Label("😘更新通知:新增幸运方块")
     
 local credits = creds:section("关闭",true)
 
-credits:Toggle("脚本框架变小一点", "", false, function(state)
+credits:Toggle("脚本框架变小一点", "", true, function(state)
         if state then
         game:GetService("CoreGui")["frosty"].Main.Style = "DropShadow"
         else
