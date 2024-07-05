@@ -45,18 +45,6 @@ credits:Toggle("脚本框架变小一点", "", false, function(state)
     credits:Button("关闭脚本",function()
         game:GetService("CoreGui")["frosty"]:Destroy()
     end)
-local creds = window:Tab("复制群",'16060333448')
-
-local credits = creds:section("TianV1Sec",true)
-    credits:Button("点我复制主群",function()
-    setclipboard("495186854")
-end)
-    credits:Button("点我复制2群",function()
-    setclipboard("915050457")
-end)
-    credits:Button("点我复制作者QQ",function()
-    setclipboard("3422265683")
-end)
 
 local creds = window:Tab("幸运方块",'16060333448')
 
