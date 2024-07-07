@@ -99,7 +99,7 @@ if table.find(LAT,LATa) then
    local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "检测结果",
-    Text = "你已经不配玩TianV1Sec了"..game.Players.LocalPlayer.Name.."再见",
+    Text = "你不配玩TianV1Sec了"..game.Players.LocalPlayer.Name.."再见",
     Duration = 5,
 })
    wait(2.5)
