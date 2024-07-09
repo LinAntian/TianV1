@@ -167,7 +167,7 @@ end)
 
 Vfly.Name = "Vfly"
 Vfly.Parent = Drag
-Vfly.BackgroundColor3 = Color3.fromRGB(66, 1, 66)
+Vfly.BackgroundColor3 = Color3.fromRGB(3, 1, 66)
 Vfly.BorderSizePixel = 0
 Vfly.Size = UDim2.new(0, 57, 0, 27)
 Vfly.Font = Enum.Font.SourceSans
