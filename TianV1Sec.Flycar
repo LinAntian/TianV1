@@ -45,7 +45,7 @@ ddnsfbfwewefe.BorderSizePixel = 0
 ddnsfbfwewefe.Position = UDim2.new(-0.000210968778, 0, -0.00395679474, 0)
 ddnsfbfwewefe.Size = UDim2.new(0, 237, 0, 27)
 ddnsfbfwewefe.Font = Enum.Font.SourceSans
-ddnsfbfwewefe.Text = "TianV1.飞车"
+ddnsfbfwewefe.Text = "TianV1Sec.飞车"
 ddnsfbfwewefe.TextColor3 = Color3.fromRGB(255, 255, 255)
 ddnsfbfwewefe.TextScaled = true
 ddnsfbfwewefe.TextSize = 14.000
@@ -81,7 +81,7 @@ Fly.TextWrapped = true
 Fly.MouseButton1Click:Connect(function()
 	local HumanoidRP = game.Players.LocalPlayer.Character.HumanoidRootPart
 	Fly.Visible = false
-	Stat2.Text = "On"
+	Stat2.Text = "开启"
 	Stat2.TextColor3 = Color3.fromRGB(0, 255, 0)
 	Unfly.Visible = true
 	Flyon.Visible = true
