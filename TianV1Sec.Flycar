@@ -28,7 +28,7 @@ Flymguiv2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Drag.Name = "Drag"
 Drag.Parent = Flymguiv2
 Drag.Active = true
-Drag.BackgroundColor3 = Color3.fromRGB(0, 150, 191)
+Drag.BackgroundColor3 = Color3.fromRGB(66, 1, 66)
 Drag.BorderSizePixel = 0
 Drag.Draggable = true
 Drag.Position = UDim2.new(0.482438415, 0, 0.454874992, 0)
@@ -44,7 +44,7 @@ FlyFrame.Size = UDim2.new(0, 237, 0, 139)
 
 ddnsfbfwewefe.Name = "ddnsfbfwewefe"
 ddnsfbfwewefe.Parent = FlyFrame
-ddnsfbfwewefe.BackgroundColor3 = Color3.fromRGB(0, 150, 191)
+ddnsfbfwewefe.BackgroundColor3 = Color3.fromRGB(66, 1, 66)
 ddnsfbfwewefe.BorderSizePixel = 0
 ddnsfbfwewefe.Position = UDim2.new(-0.000210968778, 0, -0.00395679474, 0)
 ddnsfbfwewefe.Size = UDim2.new(0, 237, 0, 27)
@@ -72,7 +72,7 @@ Speed.TextWrapped = true
 
 Fly.Name = "Fly"
 Fly.Parent = FlyFrame
-Fly.BackgroundColor3 = Color3.fromRGB(0, 150, 191)
+Fly.BackgroundColor3 = Color3.fromRGB(66, 0, 66)
 Fly.BorderSizePixel = 0
 Fly.Position = UDim2.new(0.0759493634, 0, 0.705797076, 0)
 Fly.Size = UDim2.new(0, 199, 0, 32)
