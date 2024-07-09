@@ -44,7 +44,7 @@ FlyFrame.Size = UDim2.new(0, 237, 0, 139)
 
 ddnsfbfwewefe.Name = "ddnsfbfwewefe"
 ddnsfbfwewefe.Parent = FlyFrame
-ddnsfbfwewefe.BackgroundColor3 = Color3.fromRGB(66, 1, 66)
+ddnsfbfwewefe.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
 ddnsfbfwewefe.BorderSizePixel = 0
 ddnsfbfwewefe.Position = UDim2.new(-0.000210968778, 0, -0.00395679474, 0)
 ddnsfbfwewefe.Size = UDim2.new(0, 237, 0, 27)
