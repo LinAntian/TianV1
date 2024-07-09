@@ -36,7 +36,7 @@ Drag.Size = UDim2.new(0, 237, 0, 27)
 
 FlyFrame.Name = "FlyFrame"
 FlyFrame.Parent = Drag
-FlyFrame.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+FlyFrame.BackgroundColor3 = Color3.fromRGB(3, 66, 55)
 FlyFrame.BorderSizePixel = 0
 FlyFrame.Draggable = true
 FlyFrame.Position = UDim2.new(-0.00200000009, 0, 0.989000022, 0)
@@ -167,7 +167,7 @@ end)
 
 Vfly.Name = "Vfly"
 Vfly.Parent = Drag
-Vfly.BackgroundColor3 = Color3.fromRGB(0, 150, 191)
+Vfly.BackgroundColor3 = Color3.fromRGB(66, 1, 66)
 Vfly.BorderSizePixel = 0
 Vfly.Size = UDim2.new(0, 57, 0, 27)
 Vfly.Font = Enum.Font.SourceSans
@@ -179,7 +179,7 @@ Vfly.TextWrapped = true
 
 Close.Name = "Close"
 Close.Parent = Drag
-Close.BackgroundColor3 = Color3.fromRGB(0, 150, 191)
+Close.BackgroundColor3 = Color3.fromRGB(3, 66, 55)
 Close.BorderSizePixel = 0
 Close.Position = UDim2.new(0.875, 0, 0, 0)
 Close.Size = UDim2.new(0, 27, 0, 27)
@@ -195,7 +195,7 @@ end)
 
 Minimize.Name = "Minimize"
 Minimize.Parent = Drag
-Minimize.BackgroundColor3 = Color3.fromRGB(0, 150, 191)
+Minimize.BackgroundColor3 = Color3.fromRGB(3, 66, 55)
 Minimize.BorderSizePixel = 0
 Minimize.Position = UDim2.new(0.75, 0, 0, 0)
 Minimize.Size = UDim2.new(0, 27, 0, 27)
