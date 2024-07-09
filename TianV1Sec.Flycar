@@ -172,7 +172,7 @@ Vfly.BorderSizePixel = 0
 Vfly.Size = UDim2.new(0, 57, 0, 27)
 Vfly.Font = Enum.Font.SourceSans
 Vfly.Text = "TianV1Sec"
-Vfly.TextColor3 = Color3.fromRGB(66, 1, 66)
+Vfly.TextColor3 = Color3.fromRGB(255, 255, 255)
 Vfly.TextScaled = true
 Vfly.TextSize = 14.000
 Vfly.TextWrapped = true
@@ -195,7 +195,7 @@ end)
 
 Minimize.Name = "Minimize"
 Minimize.Parent = Drag
-Minimize.BackgroundColor3 = Color3.fromRGB(3, 66, 55)
+Minimize.BackgroundColor3 = Color3.fromRGB(66, 1, 66)
 Minimize.BorderSizePixel = 0
 Minimize.Position = UDim2.new(0.75, 0, 0, 0)
 Minimize.Size = UDim2.new(0, 27, 0, 27)
