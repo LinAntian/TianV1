@@ -197,7 +197,7 @@ local SkidFling = function(TargetPlayer)
     end
 end
 
-if not Welcome then Message("ç”©é£žå·²å¼€å¯æˆåŠŸ", "çŒ«è„šæœ¬", 5) end
+if not Welcome then Message("TianV1Sec.甩飞所有人", "已成功加载", 5) end
 getgenv().Welcome = true
 if Targets[1] then for _,x in next, Targets do GetPlayer(x) end else return end
 
