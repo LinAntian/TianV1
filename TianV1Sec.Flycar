@@ -179,7 +179,7 @@ Vfly.TextWrapped = true
 
 Close.Name = "Close"
 Close.Parent = Drag
-Close.BackgroundColor3 = Color3.fromRGB(3, 66, 55)
+Close.BackgroundColor3 = Color3.fromRGB(66, 66, 55)
 Close.BorderSizePixel = 0
 Close.Position = UDim2.new(0.875, 0, 0, 0)
 Close.Size = UDim2.new(0, 27, 0, 27)
