@@ -12,7 +12,7 @@ LAT = game.Players.LocalPlayer.Name
 LAT = {
     "",
 }
-if long then
+if LAT then
    local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "TianV1Sec踢出系统",
