@@ -1,0 +1,8 @@
+while true do
+wait(3)
+		msg = Instance.new("Message")
+		msg.Parent = game.Workspace
+		msg.Text = "TianV1Sec - 官方已将你踢出游戏"
+		wait(6)
+		msg:remove()
+	end
