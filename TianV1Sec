@@ -1,8 +1,28 @@
-while true do
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "TianV1Sec",
+    Text = "正在执行踢出",
+    Duration = 5,
+})
+
 wait(3)
-		msg = Instance.new("Message")
-		msg.Parent = game.Workspace
-		msg.Text = "LATstudio - TianV1Sec更新，去群聊中获取最新版本"
-		wait(6)
-		msg:remove()
-	end
+
+LAT = game.Players.LocalPlayer.Name
+LAT = {
+    "",
+}
+if long then
+   local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "TianV1Sec踢出系统",
+    Text = "TianV1Sec踢出"..game.Players.LocalPlayer.Name.."已加载成功",
+    Duration = 5,
+})
+   wait(0.3)
+
+       game.Players.LocalPlayer:Kick("TianV1Sec拒绝你的访问")
+
+    else 
+LATstudio
+end
