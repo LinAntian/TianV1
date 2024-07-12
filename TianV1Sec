@@ -1,7 +1,7 @@
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
-    Title = "TianV1Sec",
+    Title = "TianV1Sec踢出系统",
     Text = "正在执行踢出",
     Duration = 5,
 })
