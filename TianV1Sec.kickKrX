@@ -1,20 +1,42 @@
 local CoreGui = game:GetService("StarterGui")
+--TianV1SecProject.Dev
+--LATstudio
+--Love LAT
+--QQ:3422265683
+--krX
 CoreGui:SetCore("SendNotification", {
-    -- Customizable
+    Title = "TianV1Sec安全守护",
+    Text = "正在开启TianV1Sec安全守护",
+    Duration = 5, --时间
+})
+
+wait(3)
+
+CoreGui:SetCore("SendNotification", {
     Title = "TianV1Sec安全守护",
     Text = "已为"..game.Players.LocalPlayer.Name.."打开安全守护",
-    Duration = 3, --时间
+    Duration = 5, --时间
 })
 
+wait(3)
+
 CoreGui:SetCore("SendNotification", {
-    -- Customizable
     Title = "落叶中心",
     Text = "已禁止使用落叶中心",
-    Duration = 3, --时间
+    Duration = 5, --时间
 })
 
+wait(3)
+
 CoreGui:SetCore("SendNotification", {
-    -- Customizable
+    Title = "Power By",
+    Text = "LATstudio",
+    Duration = 5, --时间
+})
+
+wait(3)
+
+CoreGui:SetCore("SendNotification", {
     Title = "Made By",
     Text = "LATstudio",
     Duration = 3, --时间
