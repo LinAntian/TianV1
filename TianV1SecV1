@@ -12,88 +12,6 @@ LAT = {
     "qazwsc314",
     "Hehefhyi",
     "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
 }
 if table.find(LAT,LATa) then
    local CoreGui = game:GetService("StarterGui")
@@ -154,7 +72,7 @@ local bin = creds:section("玩家信息",true)
     bin:Label("作者:LAT QQ:3422265683☺")
     bin:Label("不喜勿喷❤")
     bin:Label("推荐子脚本TianV1")
-    bin:Label("😘更新通知:新增飞车")
+    bin:Label("😘更新通知:新增自瞄")
     
 local credits = creds:section("关闭",true)
 
@@ -189,6 +107,9 @@ local credits = creds:section("玩家",true)
 end)
     credits:Button("肘人",function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_5wpM7bBcOPspmX7lQ3m75SrYNWqxZ858ai3tJdEAId6jSI05IOUB224FQ0VSAswH.lua.txt'),true))()
+end)
+    credits:Button("AimmerZ V2自瞄",function()
+    loadstring(game:HttpGet('https://gist.githubusercontent.com/pleaseful/340594344eb73891941d2d01af742618/raw/94063ac38cbda5f382675ca949db75f6cc683fd8/Aimmerz%2520V2.lua'))()
 end)
     credits:Button("Sec甩飞所有人",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1Sec.SFSYR"))()
