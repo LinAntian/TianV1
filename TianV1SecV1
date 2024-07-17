@@ -84,6 +84,9 @@ credits:Toggle("脚本框架变大一点", "", true, function(state)
             game:GetService("CoreGui")["frosty"].Main.Style = "Custom"
         end
     end)
+    credits:Button("TianV1Sec安全守护",function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1Sec.kickKrX'),true))()
+end)
     credits:Button("关闭脚本",function()
         game:GetService("CoreGui")["frosty"]:Destroy()
     end)
