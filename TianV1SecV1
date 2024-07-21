@@ -563,5 +563,5 @@ local creds = window:Tab("压力",'16060333448')
 
 local credits = creds:section("TianV1Sec",true)
     credits:Button("NB DOORS",function()
-    loadstring(game:HttpGet(('https://github.com/DocYogurt/Main/raw/main/Scripts/Pressure')))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/Pressure/main/NBDoors"))()
 end)
