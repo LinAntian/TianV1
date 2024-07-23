@@ -11,6 +11,7 @@ LATa = game.Players.LocalPlayer.Name
 LAT = {
     "qazwsc314",
     "Hehefhyi",
+    "kr520l",
     "",
 }
 if table.find(LAT,LATa) then
