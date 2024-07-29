@@ -4,7 +4,7 @@ local Mesh = Instance.new('SpecialMesh')
 
 local Death = Instance.new('Tool')
 
-Death.Name = "死亡笔记"
+Death.Name = "Sec死亡笔记"
 
 Handle.Name = "Handle"
 
@@ -44,7 +44,7 @@ local Normal = Enum.EasingStyle.Linear
 
 local ScreenGui = Instance.new("ScreenGui", game.Players["LocalPlayer"].PlayerGui)
 
-ScreenGui.Name = "死亡笔记"
+ScreenGui.Name = "Sec死亡笔记"
 
 
 
@@ -168,7 +168,7 @@ title.ZIndex = 4
 
 title.Font = "Bodoni"
 
-title.Text = "死亡笔记"
+title.Text = "Sec死亡笔记"
 
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 
@@ -240,7 +240,7 @@ text.ZIndex = 4
 
 text.Font = "Garamond"
 
-text.Text = "TianV1Sec"
+text.Text = "TianV1Sec - LATstudio"
 
 text.TextColor3 = Color3.fromRGB(255, 255, 255)
 
