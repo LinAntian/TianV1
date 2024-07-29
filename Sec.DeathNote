@@ -188,7 +188,7 @@ body.ZIndex = 4
 
 body.Font = "Garamond"
 
-body.Text = "输入名字"
+body.Text = "请在右方输入名字"
 
 body.TextColor3 = Color3.fromRGB(255, 255, 255)
 
