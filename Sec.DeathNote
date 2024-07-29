@@ -214,7 +214,7 @@ line.ZIndex = 4
 
 line.Font = "Garamond"
 
-line.Text = "________________"
+line.Text = "TianV1Sec"
 
 line.TextColor3 = Color3.fromRGB(255, 255, 255)
 
@@ -240,7 +240,7 @@ text.ZIndex = 4
 
 text.Font = "Garamond"
 
-text.Text = "TianV1Sec - LATstudio"
+text.Text = "LATstudio"
 
 text.TextColor3 = Color3.fromRGB(255, 255, 255)
 
