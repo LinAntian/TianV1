@@ -566,3 +566,10 @@ local credits = creds:section("TianV1Sec",true)
     credits:Button("NB DOORS",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/Pressure/main/NBDoors"))()
 end)
+
+local creds = window:Tab("谁是间谍",'16060333448')
+
+local credits = creds:section("TianV1Sec",true)
+    credits:Button("NB DOORS",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1/main/TianV1Sec.Spy"))()
+end)
