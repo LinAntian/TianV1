@@ -74,7 +74,7 @@ local bin = creds:section("玩家信息",true)
     bin:Label("不喜勿喷❤")
     bin:Label("推荐子脚本TianV1")
     bin:Label("落叶中心将会侵犯你的隐私!已更新防落叶中心检测")
-    bin:Label("😘更新通知:更新死亡笔记")
+    bin:Label("😘更新通知:新增谁是间谍")
     
 local credits = creds:section("关闭",true)
 
